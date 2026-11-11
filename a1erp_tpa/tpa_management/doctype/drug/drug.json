@@ -1,0 +1,212 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "field:drug_code",
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "drug_code",
+  "trade_name",
+  "generic_name",
+  "atc_code",
+  "cb_1",
+  "dosage_form",
+  "strength",
+  "pack_size",
+  "price",
+  "sb_cov",
+  "covered",
+  "requires_preauth",
+  "chronic_drug",
+  "cb_cov",
+  "max_quantity",
+  "max_days_supply",
+  "min_days_between_fills",
+  "sb_dx",
+  "allowed_diagnoses"
+ ],
+ "fields": [
+  {
+   "fieldname": "drug_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Drug Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "trade_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trade Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "generic_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Generic (Scientific) Name"
+  },
+  {
+   "fieldname": "atc_code",
+   "fieldtype": "Link",
+   "label": "ATC Code",
+   "options": "Medical Code"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dosage_form",
+   "fieldtype": "Data",
+   "label": "Dosage Form"
+  },
+  {
+   "fieldname": "strength",
+   "fieldtype": "Data",
+   "label": "Strength"
+  },
+  {
+   "fieldname": "pack_size",
+   "fieldtype": "Data",
+   "label": "Pack Size"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price"
+  },
+  {
+   "fieldname": "sb_cov",
+   "fieldtype": "Section Break",
+   "label": "Coverage Rules"
+  },
+  {
+   "default": "1",
+   "fieldname": "covered",
+   "fieldtype": "Check",
+   "label": "Covered"
+  },
+  {
+   "fieldname": "requires_preauth",
+   "fieldtype": "Check",
+   "label": "Requires Pre-Authorization"
+  },
+  {
+   "fieldname": "chronic_drug",
+   "fieldtype": "Check",
+   "label": "Chronic Medication"
+  },
+  {
+   "fieldname": "cb_cov",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "max_quantity",
+   "fieldtype": "Float",
+   "label": "Maximum Quantity per Dispensing"
+  },
+  {
+   "fieldname": "max_days_supply",
+   "fieldtype": "Int",
+   "label": "Maximum Days of Supply"
+  },
+  {
+   "fieldname": "min_days_between_fills",
+   "fieldtype": "Int",
+   "label": "Minimum Days Between Fills"
+  },
+  {
+   "collapsible": 1,
+   "description": "Leave empty when the drug is not restricted to diagnoses",
+   "fieldname": "sb_dx",
+   "fieldtype": "Section Break",
+   "label": "Allowed Diagnoses"
+  },
+  {
+   "fieldname": "allowed_diagnoses",
+   "fieldtype": "Table",
+   "label": "Diagnoses",
+   "options": "Drug Diagnosis"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-09 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "Drug",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Insurance Auditor"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Claims Officer"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Customer Service"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Finance"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Medical Reviewer"
+  }
+ ],
+ "search_fields": "drug_code,trade_name,generic_name",
+ "show_title_field_in_link": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "trade_name",
+ "track_changes": 1
+}

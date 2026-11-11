@@ -1,0 +1,235 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "TDOC-.YYYY.-.#####",
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "document_type",
+  "file",
+  "cb_1",
+  "reference_doctype",
+  "reference_name",
+  "is_confidential",
+  "sb_ver",
+  "version",
+  "is_latest",
+  "supersedes",
+  "cb_ver",
+  "retention_years",
+  "retention_until",
+  "archived",
+  "archived_on",
+  "sb_text",
+  "extracted_text",
+  "tags"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Document Type",
+   "options": "Insurer Contract\nClient Contract\nProvider Contract\nMedical Report\nPrescription\nSettlement Document\nMember Document\nCorrespondence\nAccounting Document\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "file",
+   "fieldtype": "Attach",
+   "label": "File",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reference_doctype",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Related To (Type)",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Related To",
+   "options": "reference_doctype"
+  },
+  {
+   "description": "Access to confidential documents is logged",
+   "fieldname": "is_confidential",
+   "fieldtype": "Check",
+   "label": "Confidential"
+  },
+  {
+   "fieldname": "sb_ver",
+   "fieldtype": "Section Break",
+   "label": "Version & Retention"
+  },
+  {
+   "default": "1",
+   "fieldname": "version",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Version",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_latest",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Latest Version",
+   "read_only": 1
+  },
+  {
+   "fieldname": "supersedes",
+   "fieldtype": "Link",
+   "label": "Supersedes",
+   "options": "TPA Document",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_ver",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "retention_years",
+   "fieldtype": "Int",
+   "label": "Retention (Years)"
+  },
+  {
+   "fieldname": "retention_until",
+   "fieldtype": "Date",
+   "label": "Retain Until",
+   "read_only": 1
+  },
+  {
+   "fieldname": "archived",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Archived",
+   "read_only": 1
+  },
+  {
+   "fieldname": "archived_on",
+   "fieldtype": "Date",
+   "label": "Archived On",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_text",
+   "fieldtype": "Section Break",
+   "label": "Searchable Text (OCR)"
+  },
+  {
+   "fieldname": "extracted_text",
+   "fieldtype": "Long Text",
+   "label": "Extracted Text"
+  },
+  {
+   "fieldname": "tags",
+   "fieldtype": "Data",
+   "label": "Tags"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-11 15:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "TPA Document",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Claims Officer",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Medical Reviewer",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Finance",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Customer Service",
+   "write": 1
+  }
+ ],
+ "search_fields": "title,document_type,reference_name,tags",
+ "show_title_field_in_link": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title",
+ "track_changes": 1
+}

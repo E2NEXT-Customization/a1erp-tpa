@@ -1,0 +1,529 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "TCL-.YYYY.-.######",
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "claim_type",
+  "member",
+  "member_name",
+  "card_no",
+  "plan",
+  "tpa_client",
+  "cb_1",
+  "provider",
+  "status",
+  "priority",
+  "source",
+  "sb_inv",
+  "invoice_no",
+  "invoice_date",
+  "service_date",
+  "cb_inv",
+  "admission_date",
+  "discharge_date",
+  "pre_auth",
+  "diagnosis",
+  "secondary_diagnosis",
+  "sb_items",
+  "items",
+  "sb_amt",
+  "currency",
+  "claimed_amount",
+  "contractual_discount",
+  "net_amount",
+  "non_covered_amount",
+  "cb_amt",
+  "deductible_amount",
+  "copay_amount",
+  "over_limit_amount",
+  "member_share",
+  "payer_amount",
+  "sb_rev",
+  "medical_reviewer",
+  "financial_reviewer",
+  "received_on",
+  "decided_on",
+  "cb_rev",
+  "rejection_reason",
+  "review_notes",
+  "info_request",
+  "sb_fwa",
+  "fwa_score",
+  "fwa_flag",
+  "validation_log",
+  "sb_pay",
+  "journal_entry",
+  "settlement",
+  "cb_pay",
+  "paid_on",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Outpatient",
+   "fieldname": "claim_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Claim Type",
+   "options": "Outpatient\nInpatient\nPharmacy\nLaboratory and Radiology\nDental\nOptical\nMaternity\nEmergency\nReimbursement",
+   "reqd": 1
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Member",
+   "options": "Plan Member",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "member.member_name",
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Member Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "member.card_no",
+   "fieldname": "card_no",
+   "fieldtype": "Data",
+   "label": "Card No.",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "member.plan",
+   "fieldname": "plan",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Plan",
+   "options": "Health Plan",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "member.tpa_client",
+   "fieldname": "tpa_client",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Client",
+   "options": "TPA Client",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "provider",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Provider",
+   "options": "Medical Provider",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Draft\nSubmitted\nReceived\nUnder Review\nMedical Review\nFinancial Review\nPending Information\nApproved\nPartially Approved\nRejected\nReady for Payment\nPaid\nClosed",
+   "read_only": 1
+  },
+  {
+   "default": "Routine",
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "Routine\nUrgent\nEmergency"
+  },
+  {
+   "default": "Manual",
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "Manual\nProvider Portal\nImport\nAPI",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_inv",
+   "fieldtype": "Section Break",
+   "label": "Invoice and Service"
+  },
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "label": "Invoice No.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "label": "Invoice Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_date",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "Date of Service",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb_inv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.claim_type=='Inpatient'",
+   "fieldname": "admission_date",
+   "fieldtype": "Date",
+   "label": "Admission Date"
+  },
+  {
+   "depends_on": "eval:doc.claim_type=='Inpatient'",
+   "fieldname": "discharge_date",
+   "fieldtype": "Date",
+   "label": "Discharge Date"
+  },
+  {
+   "fieldname": "pre_auth",
+   "fieldtype": "Link",
+   "label": "Pre-Authorization",
+   "options": "Pre-Authorization"
+  },
+  {
+   "fieldname": "diagnosis",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Diagnosis",
+   "options": "Medical Code"
+  },
+  {
+   "fieldname": "secondary_diagnosis",
+   "fieldtype": "Link",
+   "label": "Secondary Diagnosis",
+   "options": "Medical Code"
+  },
+  {
+   "fieldname": "sb_items",
+   "fieldtype": "Section Break",
+   "label": "Billed Services and Drugs"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Claim Item"
+  },
+  {
+   "fieldname": "sb_amt",
+   "fieldtype": "Section Break",
+   "label": "Calculation"
+  },
+  {
+   "fetch_from": "plan.currency",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "claimed_amount",
+   "fieldtype": "Currency",
+   "label": "Claimed Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "contractual_discount",
+   "fieldtype": "Currency",
+   "label": "Contractual Discount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_amount",
+   "fieldtype": "Currency",
+   "label": "Amount After Discount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "non_covered_amount",
+   "fieldtype": "Currency",
+   "label": "Not Covered",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_amt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deductible_amount",
+   "fieldtype": "Currency",
+   "label": "Deductible",
+   "read_only": 1
+  },
+  {
+   "fieldname": "copay_amount",
+   "fieldtype": "Currency",
+   "label": "Member Co-payment",
+   "read_only": 1
+  },
+  {
+   "fieldname": "over_limit_amount",
+   "fieldtype": "Currency",
+   "label": "Above Benefit Limit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "member_share",
+   "fieldtype": "Currency",
+   "label": "Total Borne by the Member",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "payer_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Payable to the Provider",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_rev",
+   "fieldtype": "Section Break",
+   "label": "Review"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "medical_reviewer",
+   "fieldtype": "Link",
+   "label": "Medical Reviewer",
+   "options": "User"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "financial_reviewer",
+   "fieldtype": "Link",
+   "label": "Financial Reviewer",
+   "options": "User"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "received_on",
+   "fieldtype": "Date",
+   "label": "Received On",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "decided_on",
+   "fieldtype": "Datetime",
+   "label": "Decided On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_rev",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "rejection_reason",
+   "fieldtype": "Link",
+   "label": "Rejection Reason",
+   "options": "Claim Rejection Reason",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "review_notes",
+   "fieldtype": "Small Text",
+   "label": "Review Notes"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "info_request",
+   "fieldtype": "Small Text",
+   "label": "Information Requested",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_fwa",
+   "fieldtype": "Section Break",
+   "label": "Control"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "fwa_score",
+   "fieldtype": "Int",
+   "label": "Risk Score",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "fwa_flag",
+   "fieldtype": "Check",
+   "label": "Flagged for Review",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "validation_log",
+   "fieldtype": "Small Text",
+   "label": "Validation Results",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_pay",
+   "fieldtype": "Section Break",
+   "label": "Accounting and Payment"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "journal_entry",
+   "fieldtype": "Link",
+   "label": "Journal Entry",
+   "no_copy": 1,
+   "options": "Journal Entry",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "settlement",
+   "fieldtype": "Link",
+   "label": "Settlement",
+   "no_copy": 1,
+   "options": "Provider Settlement",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_pay",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "paid_on",
+   "fieldtype": "Date",
+   "label": "Paid On",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Medical Claim",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-11-09 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "Medical Claim",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Claims Officer",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Medical Reviewer",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Insurance Auditor"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Customer Service"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Finance"
+  }
+ ],
+ "search_fields": "member_name,card_no,provider,invoice_no,status",
+ "show_title_field_in_link": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "member_name",
+ "track_changes": 1
+}

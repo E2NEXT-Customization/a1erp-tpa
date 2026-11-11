@@ -1,0 +1,56 @@
+{
+ "cards": [
+  {
+   "card": "TPA - Claims in Progress"
+  },
+  {
+   "card": "TPA - Claims Pending Information"
+  },
+  {
+   "card": "TPA - Approved Claims Payable"
+  },
+  {
+   "card": "TPA - Open Pre-Authorizations"
+  },
+  {
+   "card": "TPA - Open Fraud Alerts"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "TPA - Claims by Status",
+   "width": "Half"
+  },
+  {
+   "chart": "TPA - Claims by Type",
+   "width": "Half"
+  },
+  {
+   "chart": "TPA - Claims by Plan",
+   "width": "Half"
+  },
+  {
+   "chart": "TPA - Pre-Authorizations by Status",
+   "width": "Half"
+  },
+  {
+   "chart": "TPA - Fraud Alerts by Severity",
+   "width": "Half"
+  },
+  {
+   "chart": "TPA - Monthly Payable Amount",
+   "width": "Half"
+  }
+ ],
+ "creation": "2026-11-09 10:00:00.000000",
+ "dashboard_name": "TPA Claims",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2026-11-09 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "TPA Claims",
+ "owner": "Administrator"
+}

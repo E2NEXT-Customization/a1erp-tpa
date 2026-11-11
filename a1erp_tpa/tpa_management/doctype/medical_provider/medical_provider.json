@@ -1,0 +1,349 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "field:provider_name",
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "provider_name",
+  "provider_name_ar",
+  "provider_type",
+  "cb_1",
+  "status",
+  "accreditation_level",
+  "parent_provider",
+  "supplier",
+  "sb_license",
+  "license_no",
+  "license_expiry",
+  "cb_license",
+  "contract_from",
+  "contract_to",
+  "default_discount_percent",
+  "sb_loc",
+  "governorate",
+  "city",
+  "address",
+  "cb_loc",
+  "latitude",
+  "longitude",
+  "phone",
+  "email_id",
+  "sb_bank",
+  "bank_name",
+  "iban",
+  "sb_net",
+  "networks",
+  "specialities",
+  "allowed_clients",
+  "sb_contacts",
+  "contacts",
+  "sb_perf",
+  "complaints_count",
+  "violations_count",
+  "rejection_rate"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "provider_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Provider Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "provider_name_ar",
+   "fieldtype": "Data",
+   "label": "Provider Name (Arabic)"
+  },
+  {
+   "fieldname": "provider_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Provider Type",
+   "options": "Hospital\nClinic / Medical Center\nDoctor\nLaboratory\nRadiology Center\nPharmacy\nDental Center\nPhysiotherapy Center\nOther Specialty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Active\nUnder Review\nSuspended\nTerminated"
+  },
+  {
+   "fieldname": "accreditation_level",
+   "fieldtype": "Select",
+   "label": "Accreditation Level",
+   "options": "\nA\nB\nC\nNot Rated"
+  },
+  {
+   "fieldname": "parent_provider",
+   "fieldtype": "Link",
+   "label": "Main Provider (for Branches)",
+   "options": "Medical Provider"
+  },
+  {
+   "description": "Settlements are payable to this supplier",
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier (for Payments)",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "sb_license",
+   "fieldtype": "Section Break",
+   "label": "License & Contract"
+  },
+  {
+   "fieldname": "license_no",
+   "fieldtype": "Data",
+   "label": "License No."
+  },
+  {
+   "fieldname": "license_expiry",
+   "fieldtype": "Date",
+   "label": "License Expiry"
+  },
+  {
+   "fieldname": "cb_license",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contract_from",
+   "fieldtype": "Date",
+   "label": "Contract From"
+  },
+  {
+   "fieldname": "contract_to",
+   "fieldtype": "Date",
+   "label": "Contract To"
+  },
+  {
+   "fieldname": "default_discount_percent",
+   "fieldtype": "Percent",
+   "label": "Default Contractual Discount (%)"
+  },
+  {
+   "fieldname": "sb_loc",
+   "fieldtype": "Section Break",
+   "label": "Location & Contact"
+  },
+  {
+   "fieldname": "governorate",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Governorate",
+   "options": "\nBaghdad\nBasra\nNineveh\nErbil\nSulaymaniyah\nDuhok\nKirkuk\nAnbar\nBabil\nKarbala\nNajaf\nDiyala\nSaladin\nWasit\nMaysan\nDhi Qar\nMuthanna\nQadisiyyah\nHalabja"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City / Area"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "cb_loc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Float",
+   "label": "Latitude",
+   "precision": "6"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Float",
+   "label": "Longitude",
+   "precision": "6"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_bank",
+   "fieldtype": "Section Break",
+   "label": "Bank Account"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank"
+  },
+  {
+   "fieldname": "iban",
+   "fieldtype": "Data",
+   "label": "IBAN / Account No."
+  },
+  {
+   "fieldname": "sb_net",
+   "fieldtype": "Section Break",
+   "label": "Networks, Specialities and Clients"
+  },
+  {
+   "fieldname": "networks",
+   "fieldtype": "Table",
+   "label": "Networks",
+   "options": "Provider Network Row"
+  },
+  {
+   "fieldname": "specialities",
+   "fieldtype": "Table",
+   "label": "Specialities",
+   "options": "Provider Speciality"
+  },
+  {
+   "description": "Leave empty for all clients",
+   "fieldname": "allowed_clients",
+   "fieldtype": "Table",
+   "label": "Clients It May Serve",
+   "options": "Provider Client Row"
+  },
+  {
+   "fieldname": "sb_contacts",
+   "fieldtype": "Section Break",
+   "label": "Authorised Contacts"
+  },
+  {
+   "fieldname": "contacts",
+   "fieldtype": "Table",
+   "label": "Contacts",
+   "options": "Provider Contact"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_perf",
+   "fieldtype": "Section Break",
+   "label": "Performance (updated automatically)"
+  },
+  {
+   "fieldname": "complaints_count",
+   "fieldtype": "Int",
+   "label": "Complaints",
+   "read_only": 1
+  },
+  {
+   "fieldname": "violations_count",
+   "fieldtype": "Int",
+   "label": "Violations",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rejection_rate",
+   "fieldtype": "Percent",
+   "label": "Claim Rejection Rate (%)",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-09 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "Medical Provider",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Claims Officer",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Medical Reviewer",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Insurance Auditor"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Customer Service"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Finance"
+  }
+ ],
+ "search_fields": "provider_name,provider_name_ar,provider_type,governorate",
+ "show_title_field_in_link": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "provider_name",
+ "track_changes": 1
+}

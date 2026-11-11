@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "TDR-.#####",
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "profile",
+  "status",
+  "progress",
+  "cb_1",
+  "seed",
+  "sb_state",
+  "current_step",
+  "records",
+  "errors",
+  "cb_state",
+  "started_on",
+  "finished_on",
+  "sb_log",
+  "log",
+  "highlights",
+  "summary",
+  "backup"
+ ],
+ "fields": [
+  {
+   "default": "Standard",
+   "fieldname": "profile",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Size",
+   "options": "Quick Tour\nStandard\nFull"
+  },
+  {
+   "default": "Queued",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Queued\nRunning\nCompleted\nCompleted with Errors\nFailed\nCleaning\nCleared",
+   "read_only": 1
+  },
+  {
+   "fieldname": "progress",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Progress",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "2026",
+   "description": "The same seed and size give the same data again",
+   "fieldname": "seed",
+   "fieldtype": "Int",
+   "label": "Random Seed"
+  },
+  {
+   "fieldname": "sb_state",
+   "fieldtype": "Section Break",
+   "label": "State"
+  },
+  {
+   "fieldname": "current_step",
+   "fieldtype": "Data",
+   "label": "Current Step",
+   "read_only": 1
+  },
+  {
+   "fieldname": "records",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Records Created",
+   "read_only": 1
+  },
+  {
+   "fieldname": "errors",
+   "fieldtype": "Int",
+   "label": "Skipped Records",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_state",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "started_on",
+   "fieldtype": "Datetime",
+   "label": "Started On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "finished_on",
+   "fieldtype": "Datetime",
+   "label": "Finished On",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_log",
+   "fieldtype": "Section Break",
+   "label": "Log"
+  },
+  {
+   "fieldname": "log",
+   "fieldtype": "Code",
+   "label": "Log",
+   "read_only": 1
+  },
+  {
+   "fieldname": "highlights",
+   "fieldtype": "Code",
+   "label": "Demo Walkthrough",
+   "options": "JSON",
+   "read_only": 1
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "Code",
+   "label": "Records by Document",
+   "options": "JSON",
+   "read_only": 1
+  },
+  {
+   "fieldname": "backup",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Settings Backup",
+   "options": "JSON",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-11 15:30:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "TPA Demo Run",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

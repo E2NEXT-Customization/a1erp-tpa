@@ -1,0 +1,50 @@
+{
+ "charts": [],
+ "content": "[{\"id\": \"hdr1\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>TPA Claims Desk</b></span>\", \"col\": 12}}, {\"id\": \"blk0\", \"type\": \"custom_block\", \"data\": {\"custom_block_name\": \"WS-tpa-claims-desk-main\", \"col\": 12}}, {\"id\": \"blk1\", \"type\": \"custom_block\", \"data\": {\"custom_block_name\": \"WS-tpa-claims-desk-sections\", \"col\": 12}}]",
+ "creation": "2026-11-09 10:00:00.000000",
+ "custom_blocks": [
+  {
+   "custom_block_name": "WS-tpa-claims-desk-main",
+   "label": "WS-tpa-claims-desk-main"
+  },
+  {
+   "custom_block_name": "WS-tpa-claims-desk-sections",
+   "label": "WS-tpa-claims-desk-sections"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "project",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "TPA Claims Desk",
+ "links": [],
+ "modified": "2026-11-10 14:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "TPA Claims Desk",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "TPA Manager"
+  },
+  {
+   "role": "TPA Claims Officer"
+  },
+  {
+   "role": "TPA Medical Reviewer"
+  }
+ ],
+ "sequence_id": 37.0,
+ "shortcuts": [],
+ "title": "TPA Claims Desk"
+}

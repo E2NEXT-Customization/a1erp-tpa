@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "TPA-NTP-.####",
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "event",
+  "channel",
+  "language",
+  "cb_1",
+  "enabled",
+  "recipients",
+  "internal_role",
+  "provider",
+  "sb_msg",
+  "subject",
+  "message",
+  "attach_print"
+ ],
+ "fields": [
+  {
+   "fieldname": "event",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Event",
+   "options": "Member Activated\nCard Issued\nCoverage Expiring\nPre-Auth Requested\nPre-Authorization Decision\nClaim Status Update\nInternal Alert",
+   "reqd": 1
+  },
+  {
+   "fieldname": "channel",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Channel",
+   "options": "Email\nSMS\nWhatsApp\nIn-App",
+   "reqd": 1
+  },
+  {
+   "default": "ar",
+   "fieldname": "language",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Language",
+   "options": "ar\nen",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Enabled"
+  },
+  {
+   "default": "Member",
+   "fieldname": "recipients",
+   "fieldtype": "Select",
+   "label": "Recipients",
+   "options": "Member\nInternal Role"
+  },
+  {
+   "depends_on": "eval:doc.recipients=='Internal Role'",
+   "fieldname": "internal_role",
+   "fieldtype": "Link",
+   "label": "Internal Role",
+   "options": "Role"
+  },
+  {
+   "depends_on": "eval:in_list(['SMS','WhatsApp'], doc.channel)",
+   "description": "Leave empty to use the default provider of the channel",
+   "fieldname": "provider",
+   "fieldtype": "Link",
+   "label": "Provider (Optional)",
+   "options": "TPA Notification Provider"
+  },
+  {
+   "fieldname": "sb_msg",
+   "fieldtype": "Section Break",
+   "label": "Message"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "description": "Variables: doc, customer_name, company. Example: {{ doc.name }} - {{ customer_name }}",
+   "fieldname": "message",
+   "fieldtype": "Text",
+   "label": "Message (Jinja)",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.channel=='Email'",
+   "fieldname": "attach_print",
+   "fieldtype": "Check",
+   "label": "Attach the Document as PDF"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-11 15:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "TPA Notification Template",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "event,channel,language",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

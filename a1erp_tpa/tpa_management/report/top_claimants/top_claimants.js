@@ -1,0 +1,12 @@
+// Copyright (c) 2026, A1ERP and contributors
+// For license information, please see license.txt
+
+frappe.query_reports["Top Claimants"] = {
+	filters: [
+		{ fieldname: "from_date", label: __("From Date"), fieldtype: "Date", reqd: 1, default: frappe.datetime.year_start() },
+		{ fieldname: "to_date", label: __("To Date"), fieldtype: "Date", reqd: 1, default: frappe.datetime.get_today() },
+		{ fieldname: "tpa_client", label: __("Client"), fieldtype: "Link", options: "TPA Client" },
+		{ fieldname: "plan", label: __("Plan"), fieldtype: "Link", options: "Health Plan" },
+		{ fieldname: "limit", label: __("Number of Members"), fieldtype: "Int", default: 50 },
+	],
+};

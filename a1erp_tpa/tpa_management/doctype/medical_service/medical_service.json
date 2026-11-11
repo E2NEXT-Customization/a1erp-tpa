@@ -1,0 +1,185 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "field:service_code",
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "service_code",
+  "service_name",
+  "service_name_ar",
+  "category",
+  "cb_1",
+  "benefit_category",
+  "cpt_code",
+  "specialty",
+  "default_price",
+  "sb_rules",
+  "requires_preauth",
+  "requires_diagnosis",
+  "is_surgical",
+  "is_admission"
+ ],
+ "fields": [
+  {
+   "fieldname": "service_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Service Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "service_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Service Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_name_ar",
+   "fieldtype": "Data",
+   "label": "Service Name (Arabic)"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Category",
+   "options": "Consultation\nInpatient Stay\nSurgery\nLaboratory\nRadiology\nPharmacy\nDental\nOptical\nPhysiotherapy\nMaternity\nEmergency\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "benefit_category",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Benefit Category",
+   "options": "Inpatient\nOutpatient\nPharmacy\nLaboratory and Radiology\nDental\nOptical\nMaternity\nEmergency\nChronic\nPhysiotherapy\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cpt_code",
+   "fieldtype": "Link",
+   "label": "CPT Code",
+   "options": "Medical Code"
+  },
+  {
+   "fieldname": "specialty",
+   "fieldtype": "Data",
+   "label": "Speciality"
+  },
+  {
+   "fieldname": "default_price",
+   "fieldtype": "Currency",
+   "label": "Default Price"
+  },
+  {
+   "fieldname": "sb_rules",
+   "fieldtype": "Section Break",
+   "label": "Rules"
+  },
+  {
+   "fieldname": "requires_preauth",
+   "fieldtype": "Check",
+   "label": "Requires Pre-Authorization"
+  },
+  {
+   "fieldname": "requires_diagnosis",
+   "fieldtype": "Check",
+   "label": "Requires a Diagnosis"
+  },
+  {
+   "fieldname": "is_surgical",
+   "fieldtype": "Check",
+   "label": "Surgical Procedure"
+  },
+  {
+   "fieldname": "is_admission",
+   "fieldtype": "Check",
+   "label": "Inpatient Admission"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-09 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "Medical Service",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Insurance Auditor"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Claims Officer"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Customer Service"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Finance"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Medical Reviewer"
+  }
+ ],
+ "search_fields": "service_code,service_name,service_name_ar",
+ "show_title_field_in_link": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "service_name",
+ "track_changes": 1
+}

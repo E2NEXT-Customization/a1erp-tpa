@@ -1,0 +1,263 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "field:client_name",
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "client_name",
+  "client_name_ar",
+  "client_type",
+  "cb_1",
+  "parent_client",
+  "customer",
+  "status",
+  "sb_contract",
+  "contract_from",
+  "contract_to",
+  "currency",
+  "cb_contract",
+  "fee_basis",
+  "fee_rate",
+  "fee_minimum",
+  "billing_frequency",
+  "sb_contact",
+  "contact_person",
+  "mobile_no",
+  "email_id",
+  "cb_contact",
+  "governorate",
+  "address",
+  "sb_portal",
+  "portal_users"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Client Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "client_name_ar",
+   "fieldtype": "Data",
+   "label": "Client Name (Arabic)"
+  },
+  {
+   "fieldname": "client_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Client Type",
+   "options": "Insurance Company\nCorporate Client\nSelf-Funded Scheme",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.client_type=='Corporate Client'",
+   "fieldname": "parent_client",
+   "fieldtype": "Link",
+   "label": "Insurance Company (for Corporate Clients)",
+   "options": "TPA Client"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer (for Billing and Receivables)",
+   "options": "Customer"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Active\nSuspended\nTerminated"
+  },
+  {
+   "fieldname": "sb_contract",
+   "fieldtype": "Section Break",
+   "label": "Contract"
+  },
+  {
+   "fieldname": "contract_from",
+   "fieldtype": "Date",
+   "label": "Contract From"
+  },
+  {
+   "fieldname": "contract_to",
+   "fieldtype": "Date",
+   "label": "Contract To"
+  },
+  {
+   "default": "IQD",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "cb_contract",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Percent of Claims",
+   "fieldname": "fee_basis",
+   "fieldtype": "Select",
+   "label": "Administration Fee Basis",
+   "options": "Percent of Claims\nPer Member Per Month\nPercent of Premium\nFixed per Month"
+  },
+  {
+   "fieldname": "fee_rate",
+   "fieldtype": "Float",
+   "label": "Fee Rate / Amount",
+   "precision": "4"
+  },
+  {
+   "fieldname": "fee_minimum",
+   "fieldtype": "Currency",
+   "label": "Minimum Fee per Period"
+  },
+  {
+   "default": "Monthly",
+   "fieldname": "billing_frequency",
+   "fieldtype": "Select",
+   "label": "Billing",
+   "options": "Monthly\nQuarterly\nAnnual"
+  },
+  {
+   "fieldname": "sb_contact",
+   "fieldtype": "Section Break",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No.",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "cb_contact",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "governorate",
+   "fieldtype": "Select",
+   "label": "Governorate",
+   "options": "\nBaghdad\nBasra\nNineveh\nErbil\nSulaymaniyah\nDuhok\nKirkuk\nAnbar\nBabil\nKarbala\nNajaf\nDiyala\nSaladin\nWasit\nMaysan\nDhi Qar\nMuthanna\nQadisiyyah\nHalabja"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "collapsible": 1,
+   "description": "Users who may sign in to the client portal and see the claims, members and funds of this client",
+   "fieldname": "sb_portal",
+   "fieldtype": "Section Break",
+   "label": "Portal Users"
+  },
+  {
+   "fieldname": "portal_users",
+   "fieldtype": "Table",
+   "label": "Portal Users",
+   "options": "Client Portal User"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-09 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "TPA Client",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Insurance Auditor"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Claims Officer"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Customer Service"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Finance"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Medical Reviewer"
+  }
+ ],
+ "search_fields": "client_name,client_name_ar,client_type",
+ "show_title_field_in_link": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "client_name",
+ "track_changes": 1
+}

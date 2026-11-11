@@ -1,0 +1,300 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "TKT-.YYYY.-.######",
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ticket_type",
+  "channel",
+  "priority",
+  "status",
+  "cb_1",
+  "subject",
+  "assigned_to",
+  "escalation_level",
+  "sb_ref",
+  "member",
+  "provider",
+  "tpa_client",
+  "cb_ref",
+  "claim",
+  "pre_auth",
+  "sb_desc",
+  "description",
+  "sb_sla",
+  "response_due",
+  "resolution_due",
+  "first_response_on",
+  "cb_sla",
+  "resolved_on",
+  "resolution",
+  "satisfaction",
+  "sb_call",
+  "call_start",
+  "call_duration_sec",
+  "call_reference"
+ ],
+ "fields": [
+  {
+   "default": "Inquiry",
+   "fieldname": "ticket_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "Inquiry\nComplaint\nSuggestion",
+   "reqd": 1
+  },
+  {
+   "default": "Phone",
+   "fieldname": "channel",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Channel",
+   "options": "Phone\nEmail\nPortal\nWhatsApp\nWalk-in"
+  },
+  {
+   "default": "Medium",
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Priority",
+   "options": "Low\nMedium\nHigh\nUrgent"
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Open\nIn Progress\nEscalated\nResolved\nClosed"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Assigned To",
+   "options": "User"
+  },
+  {
+   "fieldname": "escalation_level",
+   "fieldtype": "Int",
+   "label": "Escalation Level",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_ref",
+   "fieldtype": "Section Break",
+   "label": "Related To"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Plan Member"
+  },
+  {
+   "fieldname": "provider",
+   "fieldtype": "Link",
+   "label": "Provider",
+   "options": "Medical Provider"
+  },
+  {
+   "fieldname": "tpa_client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "TPA Client"
+  },
+  {
+   "fieldname": "cb_ref",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "claim",
+   "fieldtype": "Link",
+   "label": "Claim",
+   "options": "Medical Claim"
+  },
+  {
+   "fieldname": "pre_auth",
+   "fieldtype": "Link",
+   "label": "Pre-Authorization",
+   "options": "Pre-Authorization"
+  },
+  {
+   "fieldname": "sb_desc",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "sb_sla",
+   "fieldtype": "Section Break",
+   "label": "Service Level"
+  },
+  {
+   "fieldname": "response_due",
+   "fieldtype": "Datetime",
+   "label": "Response Due",
+   "read_only": 1
+  },
+  {
+   "fieldname": "resolution_due",
+   "fieldtype": "Datetime",
+   "label": "Resolution Due",
+   "read_only": 1
+  },
+  {
+   "fieldname": "first_response_on",
+   "fieldtype": "Datetime",
+   "label": "First Response On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_sla",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "resolved_on",
+   "fieldtype": "Datetime",
+   "label": "Resolved On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "resolution",
+   "fieldtype": "Small Text",
+   "label": "Resolution"
+  },
+  {
+   "fieldname": "satisfaction",
+   "fieldtype": "Select",
+   "label": "Satisfaction (1-5)",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_call",
+   "fieldtype": "Section Break",
+   "label": "Call Details"
+  },
+  {
+   "fieldname": "call_start",
+   "fieldtype": "Datetime",
+   "label": "Call Start"
+  },
+  {
+   "fieldname": "call_duration_sec",
+   "fieldtype": "Int",
+   "label": "Duration (Seconds)"
+  },
+  {
+   "fieldname": "call_reference",
+   "fieldtype": "Data",
+   "label": "Call Recording Reference"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-09 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "Service Ticket",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Customer Service",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Claims Officer",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Insurance Auditor"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Finance"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Medical Reviewer"
+  }
+ ],
+ "show_title_field_in_link": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "subject",
+ "track_changes": 1
+}

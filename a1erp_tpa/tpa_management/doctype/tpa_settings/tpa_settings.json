@@ -1,0 +1,261 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_general",
+  "company",
+  "default_currency",
+  "plan_year_start_month",
+  "cb_general",
+  "duplicate_window_days",
+  "preauth_validity_days",
+  "card_validity_months",
+  "price_tolerance_percent",
+  "document_retention_years",
+  "sb_calc",
+  "calculation_order",
+  "fwa_enabled",
+  "tab_accounts",
+  "claims_funding_receivable_account",
+  "fund_liability_account",
+  "admin_fee_income_account",
+  "adjustments_account",
+  "provider_payment_account",
+  "tab_workflow",
+  "transitions",
+  "approval_levels",
+  "sla_rules",
+  "tab_notify",
+  "notifications_enabled",
+  "notification_default_language",
+  "cb_notify",
+  "notification_max_attempts",
+  "default_sms_provider",
+  "default_whatsapp_provider"
+ ],
+ "fields": [
+  {
+   "fieldname": "tab_general",
+   "fieldtype": "Tab Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "default": "IQD",
+   "fieldname": "default_currency",
+   "fieldtype": "Link",
+   "label": "Default Currency",
+   "options": "Currency"
+  },
+  {
+   "default": "1",
+   "fieldname": "plan_year_start_month",
+   "fieldtype": "Select",
+   "label": "Plan Year Starts in Month",
+   "options": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12"
+  },
+  {
+   "fieldname": "cb_general",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "7",
+   "fieldname": "duplicate_window_days",
+   "fieldtype": "Int",
+   "label": "Duplicate Claim Window (Days)"
+  },
+  {
+   "default": "30",
+   "fieldname": "preauth_validity_days",
+   "fieldtype": "Int",
+   "label": "Pre-Authorization Validity (Days)"
+  },
+  {
+   "default": "12",
+   "fieldname": "card_validity_months",
+   "fieldtype": "Int",
+   "label": "Card Validity (Months)"
+  },
+  {
+   "default": "0",
+   "fieldname": "price_tolerance_percent",
+   "fieldtype": "Percent",
+   "label": "Price Tolerance Above Tariff (%)"
+  },
+  {
+   "fieldname": "document_retention_years",
+   "fieldtype": "Int",
+   "label": "Document Retention (Years)",
+   "default": "10"
+  },
+  {
+   "fieldname": "sb_calc",
+   "fieldtype": "Section Break",
+   "label": "Claim Calculation"
+  },
+  {
+   "default": "Discount, Deductible, Co-payment, Limit",
+   "description": "The contractual discount is always applied first. The default order checks the benefit limit last",
+   "fieldname": "calculation_order",
+   "fieldtype": "Select",
+   "label": "Order of Calculation",
+   "options": "Discount, Deductible, Co-payment, Limit\nDiscount, Limit, Deductible, Co-payment"
+  },
+  {
+   "default": "1",
+   "fieldname": "fwa_enabled",
+   "fieldtype": "Check",
+   "label": "Run Fraud, Waste and Abuse Rules on Submission"
+  },
+  {
+   "fieldname": "tab_accounts",
+   "fieldtype": "Tab Break",
+   "label": "Accounts"
+  },
+  {
+   "fieldname": "claims_funding_receivable_account",
+   "fieldtype": "Link",
+   "label": "Receivable from Funding Parties Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "fund_liability_account",
+   "fieldtype": "Link",
+   "label": "Health Funds Liability Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "admin_fee_income_account",
+   "fieldtype": "Link",
+   "label": "TPA Administration Fee Income Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "adjustments_account",
+   "fieldtype": "Link",
+   "label": "Settlement Adjustments Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "provider_payment_account",
+   "fieldtype": "Link",
+   "label": "Default Bank / Cash Account for Provider Payments",
+   "options": "Account"
+  },
+  {
+   "fieldname": "tab_workflow",
+   "fieldtype": "Tab Break",
+   "label": "Workflow & Approvals"
+  },
+  {
+   "description": "Edit the claim workflow here. Empty = every change is allowed",
+   "fieldname": "transitions",
+   "fieldtype": "Table",
+   "label": "Allowed Claim Status Changes",
+   "options": "TPA Status Transition"
+  },
+  {
+   "fieldname": "approval_levels",
+   "fieldtype": "Table",
+   "label": "Approval Levels by Amount",
+   "options": "TPA Approval Level"
+  },
+  {
+   "fieldname": "sla_rules",
+   "fieldtype": "Table",
+   "label": "Service Level Rules",
+   "options": "TPA SLA Rule"
+  },
+  {
+   "fieldname": "tab_notify",
+   "fieldtype": "Tab Break",
+   "label": "Notifications"
+  },
+  {
+   "fieldname": "notifications_enabled",
+   "fieldtype": "Check",
+   "label": "Send Notifications",
+   "default": "1"
+  },
+  {
+   "fieldname": "notification_default_language",
+   "fieldtype": "Select",
+   "label": "Default Language",
+   "options": "ar\nen",
+   "default": "ar"
+  },
+  {
+   "fieldname": "cb_notify",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "notification_max_attempts",
+   "fieldtype": "Int",
+   "label": "Maximum Sending Attempts",
+   "default": "3"
+  },
+  {
+   "fieldname": "default_sms_provider",
+   "fieldtype": "Link",
+   "label": "Default SMS Provider",
+   "options": "TPA Notification Provider"
+  },
+  {
+   "fieldname": "default_whatsapp_provider",
+   "fieldtype": "Link",
+   "label": "Default WhatsApp Provider",
+   "options": "TPA Notification Provider"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-11-11 15:10:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "TPA Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Insurance Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Insurance Accountant"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Insurance Auditor"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,162 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_type",
+  "service",
+  "drug",
+  "description",
+  "service_date",
+  "quantity",
+  "unit_price",
+  "line_total",
+  "tariff_price",
+  "benefit_category",
+  "status",
+  "discount_amount",
+  "non_covered_amount",
+  "deductible_amount",
+  "copay_amount",
+  "payer_amount",
+  "reason",
+  "note"
+ ],
+ "fields": [
+  {
+   "default": "Service",
+   "fieldname": "item_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Service\nDrug",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.item_type=='Service'",
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Service",
+   "options": "Medical Service"
+  },
+  {
+   "depends_on": "eval:doc.item_type=='Drug'",
+   "fieldname": "drug",
+   "fieldtype": "Link",
+   "label": "Drug",
+   "options": "Drug"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "service_date",
+   "fieldtype": "Date",
+   "label": "Service Date"
+  },
+  {
+   "default": "1",
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Billed Price"
+  },
+  {
+   "fieldname": "line_total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Billed Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tariff_price",
+   "fieldtype": "Currency",
+   "label": "Tariff Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "benefit_category",
+   "fieldtype": "Data",
+   "label": "Benefit",
+   "read_only": 1
+  },
+  {
+   "default": "Accepted",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Decision",
+   "options": "Accepted\nReduced\nRejected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "label": "Contractual Discount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "non_covered_amount",
+   "fieldtype": "Currency",
+   "label": "Not Covered",
+   "read_only": 1
+  },
+  {
+   "fieldname": "deductible_amount",
+   "fieldtype": "Currency",
+   "label": "Deductible",
+   "read_only": 1
+  },
+  {
+   "fieldname": "copay_amount",
+   "fieldtype": "Currency",
+   "label": "Co-payment",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payer_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Payable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Link",
+   "label": "Reason",
+   "options": "Claim Rejection Reason",
+   "read_only": 1
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "label": "Note",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-11-09 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "Claim Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

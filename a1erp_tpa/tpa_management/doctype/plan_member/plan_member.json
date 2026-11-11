@@ -1,0 +1,314 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "MBR-.YYYY.-.######",
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member_name",
+  "member_name_ar",
+  "card_no",
+  "status",
+  "cb_1",
+  "plan",
+  "class_name",
+  "tpa_client",
+  "principal",
+  "relationship",
+  "sb_person",
+  "national_id",
+  "gender",
+  "date_of_birth",
+  "age",
+  "cb_person",
+  "mobile_no",
+  "email_id",
+  "language",
+  "photo",
+  "user",
+  "sb_work",
+  "employer",
+  "employee_no",
+  "sb_cov",
+  "start_date",
+  "end_date",
+  "status_reason",
+  "sb_log",
+  "status_log"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "member_name_ar",
+   "fieldtype": "Data",
+   "label": "Name (Arabic)"
+  },
+  {
+   "fieldname": "card_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Membership / Card No.",
+   "no_copy": 1,
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Pending\nActive\nSuspended\nExpired\nTerminated"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Plan",
+   "options": "Health Plan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "class_name",
+   "fieldtype": "Data",
+   "label": "Class"
+  },
+  {
+   "fetch_from": "plan.tpa_client",
+   "fieldname": "tpa_client",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Client",
+   "options": "TPA Client",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.relationship!='Principal'",
+   "fieldname": "principal",
+   "fieldtype": "Link",
+   "label": "Principal Member",
+   "options": "Plan Member"
+  },
+  {
+   "default": "Principal",
+   "fieldname": "relationship",
+   "fieldtype": "Select",
+   "label": "Relationship",
+   "options": "Principal\nSpouse\nSon\nDaughter\nFather\nMother\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sb_person",
+   "fieldtype": "Section Break",
+   "label": "Personal Data"
+  },
+  {
+   "fieldname": "national_id",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "National ID / Civil Status ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_person",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No.",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "default": "ar",
+   "fieldname": "language",
+   "fieldtype": "Select",
+   "label": "Preferred Language",
+   "options": "ar\nen"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "description": "Allows the member to sign in to the member portal",
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "Portal User",
+   "no_copy": 1,
+   "options": "User"
+  },
+  {
+   "fieldname": "sb_work",
+   "fieldtype": "Section Break",
+   "label": "Employment"
+  },
+  {
+   "fieldname": "employer",
+   "fieldtype": "Data",
+   "label": "Employer"
+  },
+  {
+   "fieldname": "employee_no",
+   "fieldtype": "Data",
+   "label": "Employee No."
+  },
+  {
+   "fieldname": "sb_cov",
+   "fieldtype": "Section Break",
+   "label": "Coverage Period"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Coverage From"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "Coverage To"
+  },
+  {
+   "fieldname": "status_reason",
+   "fieldtype": "Data",
+   "label": "Reason for Status Change"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_log",
+   "fieldtype": "Section Break",
+   "label": "Status History"
+  },
+  {
+   "fieldname": "status_log",
+   "fieldtype": "Table",
+   "label": "History",
+   "options": "Member Status Log",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-09 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "Plan Member",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Customer Service",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Claims Officer",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Insurance Auditor"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Finance"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Medical Reviewer"
+  }
+ ],
+ "search_fields": "member_name,member_name_ar,card_no,national_id",
+ "show_title_field_in_link": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "member_name",
+ "track_changes": 1
+}

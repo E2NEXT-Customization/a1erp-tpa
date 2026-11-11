@@ -1,0 +1,362 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "PLN-.YYYY.-.#####",
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plan_name",
+  "plan_name_ar",
+  "is_template",
+  "status",
+  "cb_1",
+  "tpa_client",
+  "insurer",
+  "funding_model",
+  "fund",
+  "sb_period",
+  "from_date",
+  "to_date",
+  "currency",
+  "cb_period",
+  "network",
+  "outside_network_covered",
+  "sb_limits",
+  "annual_limit",
+  "family_limit",
+  "limit_mode",
+  "cb_limits",
+  "per_visit_limit",
+  "member_copay_percent",
+  "deductible",
+  "sb_scope",
+  "pre_existing_covered",
+  "chronic_covered",
+  "maternity_covered",
+  "cb_scope",
+  "emergency_covered",
+  "pharmacy_covered",
+  "sb_classes",
+  "classes",
+  "sb_benefits",
+  "benefits",
+  "sb_excl",
+  "exclusions",
+  "sb_fund",
+  "funding_sources",
+  "tab_terms",
+  "terms"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plan Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plan_name_ar",
+   "fieldtype": "Data",
+   "label": "Plan Name (Arabic)"
+  },
+  {
+   "description": "Templates are copied to create new plans",
+   "fieldname": "is_template",
+   "fieldtype": "Check",
+   "label": "Template"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Draft\nActive\nSuspended\nExpired"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tpa_client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Client",
+   "options": "TPA Client"
+  },
+  {
+   "fieldname": "insurer",
+   "fieldtype": "Link",
+   "label": "Insurance Company",
+   "options": "TPA Client"
+  },
+  {
+   "default": "Insurance Company Funded",
+   "fieldname": "funding_model",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Funding Model",
+   "options": "Insurance Company Funded\nSelf-Funded\nMultiple Funding Sources",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.funding_model=='Self-Funded'",
+   "fieldname": "fund",
+   "fieldtype": "Link",
+   "label": "Health Fund",
+   "options": "Health Fund"
+  },
+  {
+   "fieldname": "sb_period",
+   "fieldtype": "Section Break",
+   "label": "Period & Network"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "Plan Period From"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "Plan Period To"
+  },
+  {
+   "default": "IQD",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "cb_period",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "network",
+   "fieldtype": "Link",
+   "label": "Provider Network",
+   "options": "Provider Network"
+  },
+  {
+   "fieldname": "outside_network_covered",
+   "fieldtype": "Check",
+   "label": "Outside-Network Treatment Covered"
+  },
+  {
+   "fieldname": "sb_limits",
+   "fieldtype": "Section Break",
+   "label": "Limits & Cost Sharing"
+  },
+  {
+   "description": "0 = no overall limit",
+   "fieldname": "annual_limit",
+   "fieldtype": "Currency",
+   "label": "Annual Limit per Member"
+  },
+  {
+   "fieldname": "family_limit",
+   "fieldtype": "Currency",
+   "label": "Annual Family Limit"
+  },
+  {
+   "default": "Individual",
+   "fieldname": "limit_mode",
+   "fieldtype": "Select",
+   "label": "Limit Applies To",
+   "options": "Individual\nFamily Shared"
+  },
+  {
+   "fieldname": "cb_limits",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "per_visit_limit",
+   "fieldtype": "Currency",
+   "label": "Limit per Visit / Service"
+  },
+  {
+   "fieldname": "member_copay_percent",
+   "fieldtype": "Percent",
+   "label": "Default Member Co-payment (%)"
+  },
+  {
+   "fieldname": "deductible",
+   "fieldtype": "Currency",
+   "label": "Default Annual Deductible"
+  },
+  {
+   "fieldname": "sb_scope",
+   "fieldtype": "Section Break",
+   "label": "Scope of Cover"
+  },
+  {
+   "fieldname": "pre_existing_covered",
+   "fieldtype": "Check",
+   "label": "Pre-existing Conditions Covered"
+  },
+  {
+   "default": "1",
+   "fieldname": "chronic_covered",
+   "fieldtype": "Check",
+   "label": "Chronic Conditions Covered"
+  },
+  {
+   "fieldname": "maternity_covered",
+   "fieldtype": "Check",
+   "label": "Pregnancy and Delivery Covered"
+  },
+  {
+   "fieldname": "cb_scope",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "emergency_covered",
+   "fieldtype": "Check",
+   "label": "Emergencies Covered"
+  },
+  {
+   "default": "1",
+   "fieldname": "pharmacy_covered",
+   "fieldtype": "Check",
+   "label": "Medicines Covered"
+  },
+  {
+   "fieldname": "sb_classes",
+   "fieldtype": "Section Break",
+   "label": "Classes"
+  },
+  {
+   "fieldname": "classes",
+   "fieldtype": "Table",
+   "label": "Classes",
+   "options": "Plan Class"
+  },
+  {
+   "fieldname": "sb_benefits",
+   "fieldtype": "Section Break",
+   "label": "Benefits"
+  },
+  {
+   "fieldname": "benefits",
+   "fieldtype": "Table",
+   "label": "Benefits",
+   "options": "Plan Benefit"
+  },
+  {
+   "fieldname": "sb_excl",
+   "fieldtype": "Section Break",
+   "label": "Exclusions"
+  },
+  {
+   "fieldname": "exclusions",
+   "fieldtype": "Table",
+   "label": "Exclusions",
+   "options": "Plan Exclusion"
+  },
+  {
+   "depends_on": "eval:doc.funding_model=='Multiple Funding Sources'",
+   "fieldname": "sb_fund",
+   "fieldtype": "Section Break",
+   "label": "Funding Parties"
+  },
+  {
+   "fieldname": "funding_sources",
+   "fieldtype": "Table",
+   "label": "Funding Parties",
+   "options": "Plan Funding Source"
+  },
+  {
+   "fieldname": "tab_terms",
+   "fieldtype": "Tab Break",
+   "label": "Terms"
+  },
+  {
+   "fieldname": "terms",
+   "fieldtype": "Text Editor",
+   "label": "Terms and Conditions"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-09 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "Health Plan",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Insurance Auditor"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Claims Officer"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Customer Service"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Finance"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Medical Reviewer"
+  }
+ ],
+ "search_fields": "plan_name,plan_name_ar,tpa_client",
+ "show_title_field_in_link": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "plan_name",
+ "track_changes": 1
+}

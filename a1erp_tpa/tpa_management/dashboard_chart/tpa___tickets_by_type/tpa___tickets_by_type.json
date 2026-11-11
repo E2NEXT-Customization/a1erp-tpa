@@ -1,0 +1,48 @@
+{
+ "aggregate_function_based_on": "",
+ "chart_name": "TPA - Tickets by Type",
+ "chart_type": "Group By",
+ "color": "#2563eb",
+ "creation": "2026-11-09 10:00:00.000000",
+ "custom_options": "",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "document_type": "Service Ticket",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[]",
+ "group_by_based_on": "ticket_type",
+ "group_by_type": "Count",
+ "is_public": 1,
+ "is_standard": 1,
+ "modified": "2026-11-09 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "TPA - Tickets by Type",
+ "number_of_groups": 10,
+ "owner": "Administrator",
+ "roles": [
+  {
+   "role": "TPA Manager"
+  },
+  {
+   "role": "TPA Claims Officer"
+  },
+  {
+   "role": "TPA Medical Reviewer"
+  },
+  {
+   "role": "TPA Finance"
+  },
+  {
+   "role": "TPA Customer Service"
+  },
+  {
+   "role": "Insurance Auditor"
+  },
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeseries": 0,
+ "type": "Pie"
+}

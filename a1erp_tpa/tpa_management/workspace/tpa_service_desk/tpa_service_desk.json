@@ -1,0 +1,50 @@
+{
+ "charts": [],
+ "content": "[{\"id\": \"hdr1\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>TPA Service Desk</b></span>\", \"col\": 12}}, {\"id\": \"blk0\", \"type\": \"custom_block\", \"data\": {\"custom_block_name\": \"WS-tpa-service-desk-main\", \"col\": 12}}, {\"id\": \"blk1\", \"type\": \"custom_block\", \"data\": {\"custom_block_name\": \"WS-tpa-service-desk-sections\", \"col\": 12}}]",
+ "creation": "2026-11-09 10:00:00.000000",
+ "custom_blocks": [
+  {
+   "custom_block_name": "WS-tpa-service-desk-main",
+   "label": "WS-tpa-service-desk-main"
+  },
+  {
+   "custom_block_name": "WS-tpa-service-desk-sections",
+   "label": "WS-tpa-service-desk-sections"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "support",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "TPA Service Desk",
+ "links": [],
+ "modified": "2026-11-10 14:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "TPA Service Desk",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "TPA Manager"
+  },
+  {
+   "role": "TPA Customer Service"
+  },
+  {
+   "role": "TPA Claims Officer"
+  }
+ ],
+ "sequence_id": 39.0,
+ "shortcuts": [],
+ "title": "TPA Service Desk"
+}

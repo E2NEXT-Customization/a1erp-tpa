@@ -1,0 +1,289 @@
+{% extends "templates/web.html" %}
+{% block page_content %}
+<style>
+.tp{--bg:#f5f5f7;--card:#fff;--ink:#1d1d1f;--mute:#6e6e73;--line:#e5e5ea;--blue:#0071e3;--green:#248a3d;--red:#d70015;--amber:#b25000;
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Segoe UI",Tahoma,"Helvetica Neue",Arial,sans-serif;color:var(--ink);
+  max-width:1080px;margin:0 auto;padding:8px 4px 48px;-webkit-font-smoothing:antialiased}
+@media (prefers-color-scheme:dark){.tp{--bg:#000;--card:#1c1c1e;--ink:#f5f5f7;--mute:#98989d;--line:#38383a;--blue:#0a84ff;--green:#30d158;--red:#ff453a;--amber:#ff9f0a}}
+.tp *{box-sizing:border-box}
+.tp .head{display:flex;justify-content:space-between;align-items:flex-end;margin:18px 2px 20px;gap:12px;flex-wrap:wrap}
+.tp .head h1{font-size:30px;font-weight:700;letter-spacing:-.02em;margin:0}
+.tp .head small{display:block;color:var(--mute);font-size:14px;margin-top:2px}
+.tp .head a{color:var(--blue);text-decoration:none;font-size:14px}
+.tp nav{display:flex;gap:2px;padding:3px;background:rgba(120,120,128,.14);border-radius:11px;overflow:auto;margin-bottom:22px;width:fit-content;max-width:100%}
+.tp nav button{border:0;background:transparent;color:var(--ink);font:inherit;font-size:14px;font-weight:500;padding:7px 15px;border-radius:9px;cursor:pointer;white-space:nowrap}
+.tp nav button.on{background:var(--card);box-shadow:0 1px 3px rgba(0,0,0,.14),0 0 0 .5px rgba(0,0,0,.04);font-weight:600}
+.tp .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+.tp .tile{background:var(--card);border-radius:18px;padding:18px 20px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.tp .tile b{display:block;font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1.1;font-variant-numeric:tabular-nums}
+.tp .tile span{display:block;color:var(--mute);font-size:13px;margin-top:6px}
+.tp .panel{background:var(--card);border-radius:18px;padding:20px;box-shadow:0 1px 2px rgba(0,0,0,.04);margin-bottom:16px}
+.tp .panel h3{margin:0 0 12px;font-size:17px;font-weight:600}
+.tp .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;align-items:end}
+.tp label{display:block;font-size:12px;color:var(--mute);margin:0 2px 5px;font-weight:500}
+.tp input,.tp select,.tp textarea{width:100%;font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid transparent;border-radius:10px;padding:10px 12px;outline:0;transition:border-color .15s,background .15s}
+.tp input:focus,.tp select:focus,.tp textarea:focus{border-color:var(--blue);background:var(--card)}
+.tp .btn{border:0;background:var(--blue);color:#fff;font:inherit;font-size:15px;font-weight:600;padding:10px 20px;border-radius:980px;cursor:pointer;transition:opacity .15s}
+.tp .btn:hover{opacity:.88}.tp .btn.ghost{background:rgba(120,120,128,.16);color:var(--ink)}
+.tp table{width:100%;border-collapse:collapse;font-size:14px}
+.tp th{color:var(--mute);font-weight:500;font-size:12px;text-align:start;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+.tp td{padding:11px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.tp tr:last-child td{border-bottom:0}
+.tp tbody tr.click{cursor:pointer}.tp tbody tr.click:hover td{background:rgba(120,120,128,.07)}
+.tp .num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.tp .pill{display:inline-block;padding:3px 10px;border-radius:980px;font-size:12px;font-weight:600;background:rgba(120,120,128,.16)}
+.tp .pill.ok{background:rgba(36,138,61,.14);color:var(--green)}.tp .pill.bad{background:rgba(215,0,21,.12);color:var(--red)}.tp .pill.warn{background:rgba(178,80,0,.14);color:var(--amber)}
+.tp .msg{margin:0 0 16px;padding:12px 16px;border-radius:12px;background:rgba(0,113,227,.1);color:var(--blue);font-size:14px}
+.tp .msg.err{background:rgba(215,0,21,.1);color:var(--red)}
+.tp .hint{color:var(--mute);font-size:14px;margin:0 0 14px}
+.tp .lines .ln{display:grid;grid-template-columns:110px 1.6fr 90px 120px 38px;gap:8px;margin-bottom:8px}
+.tp .lines .x{background:transparent;border:0;color:var(--mute);font-size:20px;cursor:pointer}
+.tp .bar{height:8px;border-radius:99px;background:rgba(120,120,128,.18);overflow:hidden;margin-top:6px}.tp .bar i{display:block;height:100%;background:var(--blue);border-radius:99px}
+.tp .bar i.hot{background:var(--amber)}
+.tp .cards3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.tp .mcard{position:relative;color:#fff;border-radius:22px;padding:22px 24px;min-height:200px;overflow:hidden;background:linear-gradient(135deg,#0a1f44,#123a73 58%,#2a7fb8);box-shadow:0 12px 30px rgba(10,31,68,.28)}
+.tp .mcard::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.07);top:-120px;inset-inline-end:-80px}
+.tp .mcard .nm{font-size:22px;font-weight:600;margin-top:34px;position:relative}.tp .mcard .no{letter-spacing:.14em;margin-top:6px;opacity:.95;direction:ltr;text-align:start;position:relative}
+.tp .mcard .meta{position:absolute;bottom:20px;inset-inline-start:24px;font-size:12px;opacity:.85}
+.tp .mcard img{position:absolute;bottom:16px;inset-inline-end:18px;width:84px;height:84px;background:#fff;border-radius:12px;padding:5px}
+.tp .modal{position:fixed;inset:0;background:rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;padding:18px;z-index:1050;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.tp .modal .box{background:var(--card);border-radius:20px;max-width:760px;width:100%;max-height:88vh;overflow:auto;padding:22px}
+@media (max-width:640px){.tp .lines .ln{grid-template-columns:1fr 1fr}.tp .head h1{font-size:25px}}
+</style>
+<div class="tp" id="tp">
+  <div class="head"><div><h1>{{ T.title }}</h1><small id="who"></small></div><a href="/?cmd=web_logout" onclick="return logout()">{{ T.sign_out }}</a></div>
+  <nav id="tabs"></nav>
+  <div id="msg"></div>
+  <div id="view"></div>
+</div>
+<script>
+const T = {{ T | tojson }};
+const API = "a1erp_tpa.tpa_management.portal.";
+let ME = null;
+const $ = (s) => document.querySelector(s);
+const fmt = (n) => Number(n || 0).toLocaleString(undefined, {maximumFractionDigits: 2});
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+const tr = (s) => (ME && ME.tr && ME.tr[s]) || s;
+function logout() { frappe.call({method: "logout"}).then(() => location.href = "/login"); return false; }
+function call(fn, args) {
+  return frappe.call({method: API + fn, args: args || {}, type: "POST"}).then((r) => r.message);
+}
+function say(text, bad) { $("#msg").innerHTML = text ? '<div class="msg' + (bad ? " err" : "") + '">' + esc(text) + "</div>" : ""; window.scrollTo({top: 0, behavior: "smooth"}); }
+function fail(e) {
+  let m = T.error;
+  try { const s = JSON.parse(e.responseText || "{}")._server_messages; if (s) m = JSON.parse(JSON.parse(s)[0]).message.replace(/<[^>]+>/g, ""); } catch (x) {}
+  say(m, true);
+}
+const GOOD = ["Approved", "Partially Approved", "Paid", "Closed", "Active", "Ready for Payment"], BAD = ["Rejected", "Cancelled", "Expired", "Terminated", "Suspended"];
+const pill = (s) => '<span class="pill ' + (GOOD.includes(s) ? "ok" : BAD.includes(s) ? "bad" : "warn") + '">' + esc(tr(s)) + "</span>";
+const money = (v) => '<span class="num">' + fmt(v) + "</span>";
+function table(cols, rows, onclick) {
+  if (!rows || !rows.length) return '<p class="hint">' + T.none + "</p>";
+  return '<div style="overflow:auto"><table><thead><tr>' + cols.map((c) => "<th>" + esc(c[0]) + "</th>").join("") + "</tr></thead><tbody>" +
+    rows.map((r, i) => '<tr class="' + (onclick ? "click" : "") + '" data-i="' + i + '">' + cols.map((c) => "<td>" + (c[2] ? c[2](r) : esc(r[c[1]])) + "</td>").join("") + "</tr>").join("") + "</tbody></table></div>";
+}
+function wire(rows, fn) { document.querySelectorAll("#view tbody tr.click").forEach((t) => t.onclick = () => fn(rows[+t.dataset.i])); }
+function tiles(list) { return '<div class="grid">' + list.map((x) => '<div class="tile"><b>' + fmt(x[1]) + "</b><span>" + esc(x[0]) + "</span></div>").join("") + "</div>"; }
+function field(label, input) { return "<div><label>" + esc(label) + "</label>" + input + "</div>"; }
+function modal(html) {
+  const m = document.createElement("div"); m.className = "modal"; m.innerHTML = '<div class="box">' + html + '<p style="margin:16px 0 0"><button class="btn ghost">' + T.close + "</button></p></div>";
+  m.onclick = (e) => { if (e.target === m || e.target.tagName === "BUTTON") m.remove(); }; $("#tp").appendChild(m);
+}
+const STATUSES = ["Received", "Under Review", "Medical Review", "Financial Review", "Pending Information", "Approved", "Partially Approved", "Rejected", "Ready for Payment", "Paid"];
+
+async function claimDetail(name) {
+  const d = await call("claim_detail", {name});
+  modal("<h3>" + esc(d.name) + " " + pill(d.status) + "</h3>" + (d.info_request ? '<p class="msg">' + T.info_needed + ": " + esc(d.info_request) + "</p>" : "") +
+    (d.rejection_reason ? '<p class="msg err">' + T.reason + ": " + esc(d.rejection_reason) + "</p>" : "") +
+    tiles([[T.claimed, d.claimed_amount], [T.member_share, d.member_share], [T.payable, d.payer_amount]]) + '<div style="height:14px"></div>' +
+    table([[T.items, "item"], [T.quantity, "quantity"], [T.line_total, "line_total", (r) => money(r.line_total)], [T.copay, "copay_amount", (r) => money(r.copay_amount)],
+      [T.payer, "payer_amount", (r) => money(r.payer_amount)], [T.status, "status", (r) => pill(r.status)], [T.note, "note"]], d.items));
+}
+function claimsTable(rows, cols) {
+  const base = {claim: [T.claim, "name"], date: [T.service_date, "service_date"], member: [T.member, "member_name"], provider: [T.provider, "provider"], plan: [T.plan, "plan"],
+    status: [T.status, "status", (r) => pill(r.status)], claimed: [T.claimed, "claimed_amount", (r) => money(r.claimed_amount)],
+    share: [T.member_share, "member_share", (r) => money(r.member_share)], payable: [T.payable, "payer_amount", (r) => money(r.payer_amount)]};
+  return table(cols.map((c) => base[c]), rows, true);
+}
+function lineRow() {
+  return '<div class="ln"><select class="it"><option value="Service">' + T.service + '</option><option value="Drug">' + T.drug + '</option></select>' +
+    '<input class="cd" list="codes" placeholder="' + T.code + '"><input class="qt" type="number" min="0" step="any" value="1"><input class="pr" type="number" min="0" step="any" placeholder="' + T.price +
+    '"><button type="button" class="x">&times;</button></div>';
+}
+function linesBlock() {
+  return '<div class="lines" id="lines">' + lineRow() + '</div><datalist id="codes"></datalist><p><button type="button" class="btn ghost" id="addln">' + T.add_item + "</button></p>";
+}
+function wireLines() {
+  const box = $("#lines");
+  $("#addln").onclick = () => box.insertAdjacentHTML("beforeend", lineRow());
+  box.onclick = (e) => { if (e.target.classList.contains("x") && box.children.length > 1) e.target.parentElement.remove(); };
+  let timer;
+  box.oninput = (e) => {
+    if (!e.target.classList.contains("cd")) return;
+    clearTimeout(timer);
+    const row = e.target.parentElement;
+    timer = setTimeout(async () => {
+      const rows = await call("lookup", {kind: row.querySelector(".it").value === "Drug" ? "drug" : "service", q: e.target.value});
+      $("#codes").innerHTML = (rows || []).map((r) => '<option value="' + esc(r.code) + '">' + esc(r.name) + "</option>").join("");
+    }, 250);
+  };
+}
+function readLines() {
+  return [...document.querySelectorAll("#lines .ln")].map((l) => ({item_type: l.querySelector(".it").value, code: l.querySelector(".cd").value.trim(),
+    quantity: l.querySelector(".qt").value, price: l.querySelector(".pr").value})).filter((x) => x.code);
+}
+
+const views = {
+  dashboard: async () => {
+    const d = await call("dashboard");
+    const list = ME.kind === "provider"
+      ? [[T.claims, d.claims], [T.in_progress, d.in_progress], [T.rejected, d.rejected], [T.claimed, d.claimed], [T.payable, d.payable], [T.paid, d.paid], [T.open_preauths, d.open_preauths]]
+      : [[T.active_members, d.members], [T.claims, d.claims], [T.in_progress, d.in_progress], [T.rejected, d.rejected], [T.claimed, d.claimed], [T.payable, d.payable], [T.open_preauths, d.open_preauths]];
+    $("#view").innerHTML = tiles(list);
+  },
+  eligibility: async () => {
+    const cats = '<option value=""></option>' + ME.categories.map((c) => "<option>" + esc(c) + "</option>").join("");
+    $("#view").innerHTML = '<div class="panel"><p class="hint">' + T.hint_eligibility + '</p><form id="ef" class="row">' + field(T.card_no, '<input name="card_no">') +
+      field(T.national_id, '<input name="national_id">') + field(T.category, "<select name=\"category\">" + cats + "</select>") +
+      '<div><button class="btn">' + T.check + '</button></div></form></div><div id="out"></div>';
+    $("#ef").onsubmit = async (e) => {
+      e.preventDefault(); say("");
+      const v = Object.fromEntries(new FormData(e.target).entries());
+      try {
+        const r = await call("eligibility", v);
+        $("#out").innerHTML = '<div class="panel"><h3>' + esc(r.member) + " &middot; " + esc(r.card_no) + ' <span class="pill ' + (r.ok ? "ok" : "bad") + '">' + esc(r.ok ? T.eligible : T.not_eligible) + "</span>" +
+          "</h3><p class='hint'>" + esc(r.plan) + (r.class_name ? " &middot; " + esc(r.class_name) : "") + " &middot; " + T.valid_until + ": " + esc(r.valid_until || "-") + "</p>" +
+          (r.reasons.length ? '<p class="msg err">' + r.reasons.map(esc).join("<br>") + "</p>" : "") +
+          tiles([[T.copay, r.copay_percent], [T.remaining + " (" + T.category + ")", r.remaining.category ?? 0], [T.remaining + " (" + T.overall + ")", r.remaining.overall ?? 0]]) +
+          "<p class='hint' style='margin-top:12px'>" + (r.requires_preauth ? T.needs_preauth : "") + (r.in_network ? "" : " &middot; " + T.network + ": " + T.no) + "</p>" +
+          table([[T.category, "category", (b) => esc(tr(b.category))], [T.copay, "copay_percent"], [T.limit, "annual_limit", (b) => money(b.annual_limit)],
+            [T.needs_preauth, "requires_preauth", (b) => (b.requires_preauth ? T.yes : T.no)], [T.waiting, "waiting_days"]], r.benefits.filter((b) => b.covered)) + "</div>";
+      } catch (x) { fail(x); }
+    };
+  },
+  new_claim: async () => {
+    const types = ["Outpatient", "Inpatient", "Pharmacy", "Laboratory and Radiology", "Dental", "Optical", "Maternity", "Emergency"].map((c) => "<option>" + esc(c) + "</option>").join("");
+    const today = new Date().toISOString().slice(0, 10);
+    $("#view").innerHTML = '<div class="panel"><p class="hint">' + T.hint_claim + '</p><form id="cf"><div class="row">' + field(T.card_no, '<input name="card_no" required>') +
+      field(T.invoice_no, '<input name="invoice_no" required>') + field(T.invoice_date, '<input name="invoice_date" type="date" value="' + today + '" required>') +
+      field(T.service_date, '<input name="service_date" type="date" value="' + today + '" required>') + field(T.claim_type, "<select name=\"claim_type\">" + types + "</select>") +
+      field(T.diagnosis, '<input name="diagnosis" placeholder="ICD-10-...">') + field(T.pre_auth, '<input name="pre_auth" placeholder="PA-...">') +
+      "</div><h3 style='margin:18px 0 10px'>" + T.items + "</h3>" + linesBlock() + '<button class="btn">' + T.send + '</button></form></div><div id="out"></div>';
+    wireLines();
+    $("#cf").onsubmit = async (e) => {
+      e.preventDefault(); say("");
+      const v = Object.fromEntries(new FormData(e.target).entries()); v.items = readLines();
+      try {
+        const r = await call("submit_claim", {data: JSON.stringify(v)});
+        say(T.claim_ok + ": " + r.name);
+        $("#out").innerHTML = '<div class="panel"><h3>' + esc(r.name) + " " + pill(r.status) + "</h3>" + tiles([[T.claimed, r.claimed_amount], [T.member_share, r.member_share], [T.payable, r.payer_amount]]) +
+          '<div style="height:12px"></div>' + table([[T.items, "item"], [T.status, "status", (x) => pill(x.status)], [T.payer, "payer_amount", (x) => money(x.payer_amount)], [T.note, "note"]], r.items) + "</div>";
+      } catch (x) { fail(x); }
+    };
+  },
+  claims: async () => {
+    const f = ME.kind === "member" ? "" : '<div class="panel"><div class="row">' + field(T.status, '<select id="sf"><option value="">' + T.status_filter + "</option>" +
+      STATUSES.map((s) => "<option>" + esc(s) + "</option>").join("") + "</select>") + "</div></div>";
+    $("#view").innerHTML = f + '<div class="panel" id="list"></div>';
+    const load = async () => {
+      const rows = await call("list_claims", {status: $("#sf") ? $("#sf").value : null});
+      const cols = ME.kind === "provider" ? ["claim", "date", "member", "status", "claimed", "share", "payable"] : ME.kind === "client" ? ["claim", "date", "member", "provider", "plan", "status", "payable"] :
+        ["claim", "date", "provider", "status", "share"];
+      $("#list").innerHTML = claimsTable(rows, cols); wire(rows, (r) => claimDetail(r.name).catch(fail));
+    };
+    if ($("#sf")) $("#sf").onchange = load;
+    await load();
+  },
+  new_preauth: async () => {
+    const types = ["Standard", "Surgery", "Admission", "Advanced Diagnostics", "Special Drug", "Continuous Treatment", "Emergency", "Out-of-Network"].map((c) => "<option>" + esc(c) + "</option>").join("");
+    $("#view").innerHTML = '<div class="panel"><form id="pf"><div class="row">' + field(T.card_no, '<input name="card_no" required>') + field(T.auth_type, "<select name=\"auth_type\">" + types + "</select>") +
+      field(T.priority, '<select name="priority"><option>Routine</option><option>Urgent</option><option>Emergency</option></select>') + field(T.diagnosis, '<input name="diagnosis" placeholder="ICD-10-...">') +
+      field(T.expected_days, '<input name="expected_days" type="number" min="0">') + "</div>" + field(T.notes, '<textarea name="notes" rows="3"></textarea>') +
+      "<h3 style='margin:18px 0 10px'>" + T.items + "</h3>" + linesBlock() + '<button class="btn">' + T.send + '</button></form></div><div id="out"></div>';
+    wireLines();
+    $("#pf").onsubmit = async (e) => {
+      e.preventDefault(); say("");
+      const v = Object.fromEntries(new FormData(e.target).entries()); v.items = readLines();
+      try {
+        const r = await call("request_preauth", {data: JSON.stringify(v)});
+        say(T.preauth_ok + ": " + r.name);
+        $("#out").innerHTML = '<div class="panel"><h3>' + esc(r.name) + " " + pill(r.status) + "</h3>" + tiles([[T.amount, r.requested_amount], [T.payable, r.payer_share], [T.member_share, r.member_share]]) + "</div>";
+      } catch (x) { fail(x); }
+    };
+  },
+  preauths: async () => {
+    const rows = await call("list_preauths");
+    const cols = [[T.pre_auth, "name"], [T.date, "request_date"]].concat(ME.kind === "provider" ? [[T.member, "member_name"]] : [[T.provider, "provider"]]).concat([
+      [T.auth_type, "auth_type", (r) => esc(tr(r.auth_type))], [T.status, "status", (r) => pill(r.status)], [T.amount, "requested_amount", (r) => money(r.requested_amount)],
+      [T.approved, "approved_amount", (r) => money(r.approved_amount)], [T.valid_until, "valid_until"], [T.note, "info_request", (r) => esc(r.info_request || r.decision_notes || "")]]);
+    $("#view").innerHTML = '<div class="panel">' + table(cols, rows) + "</div>";
+  },
+  settlements: async () => {
+    const rows = await call("list_settlements");
+    $("#view").innerHTML = '<div class="panel">' + table([[T.name, "name"], [T.posting_date, "posting_date"], [T.period, "period_from", (r) => esc(r.period_from + " → " + r.period_to)],
+      [T.gross, "gross_payable", (r) => money(r.gross_payable)], [T.adjustments, "adjustments_total", (r) => money(r.adjustments_total)], [T.net, "net_payable", (r) => money(r.net_payable)],
+      [T.payment, "payment_entry", (r) => (r.payment_entry ? pill("Paid") : "")]], rows) + "</div>";
+  },
+  members: async () => {
+    $("#view").innerHTML = '<div class="panel"><div class="row">' + field(T.search, '<input id="q">') + '</div></div><div class="panel" id="list"></div>';
+    const load = async () => {
+      const rows = await call("list_members", {q: $("#q").value || null});
+      $("#list").innerHTML = table([[T.name, "member_name"], [T.card_no, "card_no"], [T.plan, "plan"], [T.class_name, "class_name"], [T.relationship, "relationship", (r) => esc(tr(r.relationship))],
+        [T.status, "status", (r) => pill(r.status)], [T.valid_until, "end_date"]], rows);
+    };
+    let t; $("#q").oninput = () => { clearTimeout(t); t = setTimeout(load, 300); };
+    await load();
+  },
+  funds: async () => {
+    const rows = await call("list_funds");
+    $("#view").innerHTML = '<div class="panel">' + table([[T.fund, "name"], [T.status, "status", (r) => pill(r.status)], [T.contributions, "contributions", (r) => money(r.contributions)],
+      [T.claims, "claims", (r) => money(r.claims)], [T.balance, "balance", (r) => money(r.balance)], [T.reserved, "reserved", (r) => money(r.reserved)],
+      [T.available, "available", (r) => money(r.available)]], rows) + "</div>";
+  },
+  card: async () => {
+    const cards = await call("my_cards");
+    $("#view").innerHTML = '<p class="hint">' + T.scan_hint + '</p><div class="cards3">' + cards.map((c) => '<div class="mcard"><div style="opacity:.85;font-size:13px">' + esc(c.plan) + " &middot; " + esc(tr(c.relationship)) + "</div>" +
+      '<div class="nm">' + esc(c.name) + '</div><div class="no">' + esc(c.card_no) + '</div><div class="meta">' + (c.class_name ? esc(c.class_name) + " &middot; " : "") + T.valid_until + ": " + esc(c.valid_until || "-") + " &middot; " + esc(tr(c.status)) +
+      "</div>" + (c.qr ? '<img src="' + c.qr + '" alt="">' : "") + "</div>").join("") + "</div>";
+  },
+  coverage: async () => {
+    const d = await call("my_coverage");
+    const bar = (used, limit) => (limit ? '<div class="bar"><i class="' + (used / limit > 0.8 ? "hot" : "") + '" style="width:' + Math.min(100, used / limit * 100) + '%"></i></div>' : "");
+    $("#view").innerHTML = '<div class="panel"><h3>' + esc(d.member) + '</h3><p class="hint">' + esc(d.plan_year[0]) + " → " + esc(d.plan_year[1]) + "</p>" +
+      (d.overall_limit ? tiles([[T.overall, d.overall_limit], [T.used, d.overall_used], [T.remaining, d.overall_remaining]]) + bar(d.overall_used, d.overall_limit) : "") + "</div>" +
+      '<div class="panel">' + table([[T.category, "category", (b) => esc(tr(b.category)) + (b.annual_limit ? bar(b.used, b.annual_limit) : "")], [T.copay, "copay_percent"],
+        [T.limit, "annual_limit", (b) => (b.annual_limit ? money(b.annual_limit) : "-")], [T.used, "used", (b) => money(b.used)],
+        [T.remaining, "remaining", (b) => (b.remaining == null ? "-" : money(b.remaining))], [T.needs_preauth, "requires_preauth", (b) => (b.requires_preauth ? T.yes : T.no)],
+        [T.waiting, "waiting_days"]], d.benefits.filter((b) => b.covered)) + "</div>";
+  },
+  providers: async () => {
+    $("#view").innerHTML = '<div class="panel"><div class="row">' + field(T.search, '<input id="q">') + field(T.governorate, '<input id="g">') + '<div><button class="btn" id="go">' + T.search + "</button></div></div></div><div class=\"panel\" id=\"list\"></div>";
+    const load = async () => {
+      const rows = await call("find_providers", {q: $("#q").value || null, governorate: $("#g").value || null});
+      $("#list").innerHTML = table([[T.provider, "provider_name", (r) => esc(r.provider_name_ar || r.provider_name)], [T.type, "provider_type", (r) => esc(tr(r.provider_type))], [T.governorate, "governorate", (r) => esc(tr(r.governorate || ""))],
+        [T.city, "city"], [T.address, "address"], [T.phone, "phone", (r) => esc(r.phone || "")],
+        ["", "latitude", (r) => (r.latitude ? '<a target="_blank" rel="noopener" href="https://www.google.com/maps?q=' + r.latitude + "," + r.longitude + '">&#8599;</a>' : "")]], rows);
+    };
+    $("#go").onclick = load; await load();
+  },
+  help: async () => {
+    $("#view").innerHTML = '<div class="panel"><form id="tf"><div class="row">' + field(T.ticket_type, '<select name="ticket_type"><option value="Inquiry">' + T.inquiry + '</option><option value="Complaint">' + T.complaint +
+      '</option><option value="Suggestion">' + T.suggestion + "</option></select>") + field(T.subject, '<input name="subject" required maxlength="140">') + field(T.claim, '<input name="claim" placeholder="TCL-...">') + "</div>" +
+      field(T.description, '<textarea name="description" rows="4"></textarea>') + '<p><button class="btn">' + T.send + "</button></p></form></div>";
+    $("#tf").onsubmit = async (e) => { e.preventDefault(); const v = Object.fromEntries(new FormData(e.target).entries());
+      try { const r = await call("open_ticket", v); say(T.ticket_ok + ": " + r.name); e.target.reset(); } catch (x) { fail(x); } };
+  },
+};
+async function go(name) {
+  document.querySelectorAll("#tabs button").forEach((b) => b.classList.toggle("on", b.dataset.v === name));
+  say(""); try { await views[name](); } catch (e) { fail(e); }
+}
+(async () => {
+  try { ME = await call("bootstrap"); } catch (e) { fail(e); return; }
+  $("#who").textContent = ME.name;
+  $("#tabs").innerHTML = ME.tabs.map((t) => '<button data-v="' + t + '">' + esc(T[t]) + "</button>").join("");
+  document.querySelectorAll("#tabs button").forEach((b) => b.onclick = () => go(b.dataset.v));
+  go(ME.tabs[0]);
+})();
+</script>
+{% endblock %}

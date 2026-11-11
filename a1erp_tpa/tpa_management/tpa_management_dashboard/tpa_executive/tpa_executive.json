@@ -1,0 +1,71 @@
+{
+ "cards": [
+  {
+   "card": "TPA - Active Members"
+  },
+  {
+   "card": "TPA - Active Providers"
+  },
+  {
+   "card": "TPA - Claims in Progress"
+  },
+  {
+   "card": "TPA - Approved Claims Payable"
+  },
+  {
+   "card": "TPA - Ready for Payment"
+  },
+  {
+   "card": "TPA - Paid Claims"
+  },
+  {
+   "card": "TPA - Open Pre-Authorizations"
+  },
+  {
+   "card": "TPA - Open Fraud Alerts"
+  },
+  {
+   "card": "TPA - Open Tickets"
+  },
+  {
+   "card": "TPA - Fund Available Balance"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "TPA - Monthly Claimed Amount",
+   "width": "Half"
+  },
+  {
+   "chart": "TPA - Claims by Status",
+   "width": "Half"
+  },
+  {
+   "chart": "TPA - Claims by Type",
+   "width": "Half"
+  },
+  {
+   "chart": "TPA - Payable by Provider",
+   "width": "Half"
+  },
+  {
+   "chart": "TPA - Members by Plan",
+   "width": "Half"
+  },
+  {
+   "chart": "TPA - Fund Balances",
+   "width": "Half"
+  }
+ ],
+ "creation": "2026-11-09 10:00:00.000000",
+ "dashboard_name": "TPA Executive",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2026-11-09 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "TPA Executive",
+ "owner": "Administrator"
+}

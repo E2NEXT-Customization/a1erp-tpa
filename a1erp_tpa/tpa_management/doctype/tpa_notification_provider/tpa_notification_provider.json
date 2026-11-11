@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "field:provider_name",
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "provider_name",
+  "channel",
+  "enabled",
+  "cb_1",
+  "sender_id",
+  "cost_per_segment",
+  "sb_api",
+  "endpoint_url",
+  "http_method",
+  "content_type",
+  "success_codes",
+  "cb_api",
+  "auth_type",
+  "auth_name",
+  "auth_secret",
+  "sb_body",
+  "body_template",
+  "extra_headers"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "provider_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Provider Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "SMS",
+   "fieldname": "channel",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Channel",
+   "options": "SMS\nWhatsApp",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sender_id",
+   "fieldtype": "Data",
+   "label": "Sender ID / Number"
+  },
+  {
+   "fieldname": "cost_per_segment",
+   "fieldtype": "Currency",
+   "label": "Cost per Message Segment"
+  },
+  {
+   "fieldname": "sb_api",
+   "fieldtype": "Section Break",
+   "label": "Provider API"
+  },
+  {
+   "fieldname": "endpoint_url",
+   "fieldtype": "Data",
+   "label": "Endpoint URL",
+   "reqd": 1
+  },
+  {
+   "default": "POST",
+   "fieldname": "http_method",
+   "fieldtype": "Select",
+   "label": "HTTP Method",
+   "options": "POST\nGET"
+  },
+  {
+   "default": "JSON",
+   "fieldname": "content_type",
+   "fieldtype": "Select",
+   "label": "Body Format",
+   "options": "JSON\nForm"
+  },
+  {
+   "default": "200,201,202",
+   "fieldname": "success_codes",
+   "fieldtype": "Data",
+   "label": "Success Status Codes"
+  },
+  {
+   "fieldname": "cb_api",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Bearer Token",
+   "fieldname": "auth_type",
+   "fieldtype": "Select",
+   "label": "Authentication",
+   "options": "None\nBearer Token\nBasic\nHeader Key\nQuery Parameter"
+  },
+  {
+   "fieldname": "auth_name",
+   "fieldtype": "Data",
+   "label": "Header / Parameter / User Name"
+  },
+  {
+   "fieldname": "auth_secret",
+   "fieldtype": "Password",
+   "label": "Token / Key / Password"
+  },
+  {
+   "fieldname": "sb_body",
+   "fieldtype": "Section Break",
+   "label": "Request Body"
+  },
+  {
+   "description": "Variables: recipient, message, sender. Example: {\"to\": {{ recipient | tojson }}, \"text\": {{ message | tojson }}, \"from\": {{ sender | tojson }}}",
+   "fieldname": "body_template",
+   "fieldtype": "Code",
+   "label": "Body Template (Jinja)",
+   "options": "Jinja"
+  },
+  {
+   "fieldname": "extra_headers",
+   "fieldtype": "Code",
+   "label": "Extra Headers (JSON)",
+   "options": "JSON"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-11 15:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "TPA Notification Provider",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

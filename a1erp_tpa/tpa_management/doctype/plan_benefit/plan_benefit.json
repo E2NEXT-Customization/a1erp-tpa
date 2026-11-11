@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "class_name",
+  "benefit_category",
+  "covered",
+  "annual_limit",
+  "per_visit_limit",
+  "copay_percent",
+  "deductible",
+  "waiting_days",
+  "sessions_limit",
+  "requires_preauth",
+  "preauth_threshold",
+  "shared_limit",
+  "oon_covered",
+  "oon_copay_percent",
+  "gender",
+  "min_age",
+  "max_age"
+ ],
+ "fields": [
+  {
+   "fieldname": "class_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Class (Empty = All)"
+  },
+  {
+   "fieldname": "benefit_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Benefit",
+   "options": "Inpatient\nOutpatient\nPharmacy\nLaboratory and Radiology\nDental\nOptical\nMaternity\nEmergency\nChronic\nPhysiotherapy\nOther",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "covered",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Covered"
+  },
+  {
+   "fieldname": "annual_limit",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Annual Limit"
+  },
+  {
+   "fieldname": "per_visit_limit",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Limit per Visit / Service"
+  },
+  {
+   "fieldname": "copay_percent",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Member Co-payment (%)"
+  },
+  {
+   "fieldname": "deductible",
+   "fieldtype": "Currency",
+   "label": "Fixed Deductible"
+  },
+  {
+   "fieldname": "waiting_days",
+   "fieldtype": "Int",
+   "label": "Waiting Period (Days)"
+  },
+  {
+   "fieldname": "sessions_limit",
+   "fieldtype": "Int",
+   "label": "Sessions Limit"
+  },
+  {
+   "fieldname": "requires_preauth",
+   "fieldtype": "Check",
+   "label": "Requires Pre-Authorization"
+  },
+  {
+   "fieldname": "preauth_threshold",
+   "fieldtype": "Currency",
+   "label": "Pre-Authorization Above Amount"
+  },
+  {
+   "fieldname": "shared_limit",
+   "fieldtype": "Check",
+   "label": "Limit Shared by the Family"
+  },
+  {
+   "fieldname": "oon_covered",
+   "fieldtype": "Check",
+   "label": "Covered Outside the Network"
+  },
+  {
+   "fieldname": "oon_copay_percent",
+   "fieldtype": "Percent",
+   "label": "Co-payment Outside the Network (%)"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender Condition",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "fieldname": "min_age",
+   "fieldtype": "Int",
+   "label": "Minimum Age"
+  },
+  {
+   "fieldname": "max_age",
+   "fieldtype": "Int",
+   "label": "Maximum Age"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-11-09 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "Plan Benefit",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

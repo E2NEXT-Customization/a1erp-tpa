@@ -1,0 +1,228 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "field:fund_name",
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "fund_name",
+  "tpa_client",
+  "status",
+  "cb_1",
+  "currency",
+  "liability_account",
+  "sb_alert",
+  "low_balance_percent",
+  "low_balance_amount",
+  "last_alert_date",
+  "sb_bal",
+  "total_contributions",
+  "total_claims",
+  "total_fees",
+  "cb_bal",
+  "current_balance",
+  "reserved_amount",
+  "available_balance"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "fund_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fund Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "tpa_client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Client",
+   "options": "TPA Client",
+   "reqd": 1
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Active\nSuspended\nClosed"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "IQD",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "description": "Liability account that holds the money of this fund",
+   "fieldname": "liability_account",
+   "fieldtype": "Link",
+   "label": "Fund Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "sb_alert",
+   "fieldtype": "Section Break",
+   "label": "Balance Alerts"
+  },
+  {
+   "default": "15",
+   "fieldname": "low_balance_percent",
+   "fieldtype": "Percent",
+   "label": "Alert When Balance Falls Below (% of Contributions)"
+  },
+  {
+   "fieldname": "low_balance_amount",
+   "fieldtype": "Currency",
+   "label": "Alert Below Amount"
+  },
+  {
+   "fieldname": "last_alert_date",
+   "fieldtype": "Date",
+   "label": "Last Alert",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_bal",
+   "fieldtype": "Section Break",
+   "label": "Balance (calculated)"
+  },
+  {
+   "fieldname": "total_contributions",
+   "fieldtype": "Currency",
+   "label": "Contributions",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_claims",
+   "fieldtype": "Currency",
+   "label": "Claims Charged",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_fees",
+   "fieldtype": "Currency",
+   "label": "Administration Fees",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_bal",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "current_balance",
+   "fieldtype": "Currency",
+   "label": "Current Balance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reserved_amount",
+   "fieldtype": "Currency",
+   "label": "Reserved by Open Authorizations",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_balance",
+   "fieldtype": "Currency",
+   "label": "Available Balance",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-09 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "Health Fund",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Finance",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Insurance Auditor"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Claims Officer"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Customer Service"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Medical Reviewer"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

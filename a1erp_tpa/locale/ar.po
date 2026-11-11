@@ -1,0 +1,3433 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ar\n"
+
+msgid ""
+msgstr ""
+
+msgid "0 = no overall limit"
+msgstr "0 = بلا حد إجمالي"
+
+msgid "0 = unlimited"
+msgstr "0 = غير محدود"
+
+msgid "1"
+msgstr "1"
+
+msgid "1-30 Days"
+msgstr "1-30 يومًا"
+
+msgid "1. Choose the size"
+msgstr "1. اختر الحجم"
+
+msgid "10"
+msgstr "10"
+
+msgid "11"
+msgstr "11"
+
+msgid "12"
+msgstr "12"
+
+msgid "2"
+msgstr "2"
+
+msgid "2. Suggested demo walkthrough"
+msgstr "2. مسار العرض المقترح"
+
+msgid "200,201,202"
+msgstr "200,201,202"
+
+msgid "3"
+msgstr "3"
+
+msgid "31-60 Days"
+msgstr "31-60 يومًا"
+
+msgid "4"
+msgstr "4"
+
+msgid "5"
+msgstr "5"
+
+msgid "6"
+msgstr "6"
+
+msgid "61-90 Days"
+msgstr "61-90 يومًا"
+
+msgid "7"
+msgstr "7"
+
+msgid "8"
+msgstr "8"
+
+msgid "9"
+msgstr "9"
+
+msgid "A"
+msgstr "A"
+
+msgid "A claim cannot move from {0} to {1}."
+msgstr "لا يمكن نقل المطالبة من الحالة {0} إلى الحالة {1}."
+
+msgid "A claim in a settlement or already paid cannot be cancelled."
+msgstr "لا يمكن إلغاء مطالبة مدرجة في تسوية أو مدفوعة مسبقاً."
+
+msgid "A convincing company for a management presentation."
+msgstr "شركة مقنعة لعرض أمام الإدارة."
+
+msgid "A demo data job is already running."
+msgstr "هناك عملية بيانات عرض قيد التنفيذ."
+
+msgid "A light set to tour every screen quickly."
+msgstr "مجموعة خفيفة للتجول في كل الشاشات بسرعة."
+
+msgid "A provider cannot be its own main provider."
+msgstr "لا يجوز أن يكون مقدم الخدمة هو نفسه مقدم الخدمة الرئيسي."
+
+msgid "A supplier is already linked."
+msgstr "هناك مورد مرتبط بالفعل."
+
+msgid "A template plan cannot have members."
+msgstr "لا يجوز أن تضم الخطة النموذجية أعضاء."
+
+msgid "API"
+msgstr "واجهة برمجية"
+
+msgid "ATC"
+msgstr "ATC"
+
+msgid "ATC Code"
+msgstr "رمز ATC"
+
+msgid "About {0} minutes."
+msgstr "قرابة {0} دقيقة."
+
+msgid "Above Benefit Limit"
+msgstr "فوق حد المنفعة"
+
+msgid "Above the benefit limit"
+msgstr "فوق حد المنفعة"
+
+msgid "Accept"
+msgstr "قبول"
+
+msgid "Accepted"
+msgstr "مقبول"
+
+msgid "Access to confidential documents is logged"
+msgstr "يُسجَّل الاطلاع على المستندات السرية"
+
+msgid "Accounting"
+msgstr "المحاسبة"
+
+msgid "Accounting Document"
+msgstr "مستند محاسبي"
+
+msgid "Accounting and Payment"
+msgstr "المحاسبة والدفع"
+
+msgid "Accounts"
+msgstr "الحسابات"
+
+msgid "Accreditation Level"
+msgstr "مستوى الاعتماد"
+
+msgid "Action"
+msgstr "الإجراء"
+
+msgid "Activate"
+msgstr "تفعيل"
+
+msgid "Active"
+msgstr "سارية"
+
+msgid "Active Members"
+msgstr "الأعضاء الفعالون"
+
+msgid "Active Providers"
+msgstr "مقدمو الخدمة الفعالون"
+
+msgid "Add"
+msgstr "إضافة"
+
+msgid "Add a line"
+msgstr "إضافة سطر"
+
+msgid "Add at least one service or drug."
+msgstr "أضف خدمة أو دواءً واحداً على الأقل."
+
+msgid "Add the benefits before activating the plan."
+msgstr "أضف المنافع قبل تفعيل الخطة."
+
+msgid "Add the billed services or drugs."
+msgstr "أضف الخدمات أو الأدوية المفوترة."
+
+msgid "Add the services or drugs to authorize."
+msgstr "أضف الخدمات أو الأدوية المطلوب الموافقة عليها."
+
+msgid "Address"
+msgstr "العنوان"
+
+msgid "Adjustment Journal Entry"
+msgstr "قيد التسوية"
+
+msgid "Adjustments"
+msgstr "التسويات"
+
+msgid "Admin"
+msgstr "مدير"
+
+msgid "Administration Fee"
+msgstr "أتعاب الإدارة"
+
+msgid "Administration Fee Basis"
+msgstr "أساس أتعاب الإدارة"
+
+msgid "Administration Fees"
+msgstr "أتعاب الإدارة"
+
+msgid "Administration fee {0} - {1}"
+msgstr "أتعاب الإدارة {0} - {1}"
+
+msgid "Admission"
+msgstr "تنويم"
+
+msgid "Admission Date"
+msgstr "تاريخ الدخول"
+
+msgid "Admission Extension"
+msgstr "تمديد تنويم"
+
+msgid "Admissions"
+msgstr "التنويمات"
+
+msgid "Advanced Diagnostics"
+msgstr "فحوصات متقدمة"
+
+msgid "Age"
+msgstr "العمر"
+
+msgid "Agreed Price"
+msgstr "السعر المتفق عليه"
+
+msgid "Alert Below Amount"
+msgstr "تنبيه عند الانخفاض عن مبلغ"
+
+msgid "Alert When Balance Falls Below (% of Contributions)"
+msgstr "تنبيه عند انخفاض الرصيد عن (% من المساهمات)"
+
+msgid "All records"
+msgstr "كل السجلات"
+
+msgid "All statuses"
+msgstr "كل الحالات"
+
+msgid "Allowed Claim Status Changes"
+msgstr "تغييرات حالة المطالبة المسموحة"
+
+msgid "Allowed Diagnoses"
+msgstr "التشخيصات المسموحة"
+
+msgid "Allowed Role"
+msgstr "الدور المسموح"
+
+msgid "Allows the member to sign in to the member portal"
+msgstr "يتيح للعضو الدخول إلى بوابة الأعضاء"
+
+msgid "Allows the person to sign in to the provider portal"
+msgstr "يتيح للشخص الدخول إلى بوابة مقدمي الخدمة"
+
+msgid "Amended From"
+msgstr "معدَّل من"
+
+msgid "Amount"
+msgstr "المبلغ"
+
+msgid "Amount (Deducted from the Provider)"
+msgstr "المبلغ (يُخصم من مقدم الخدمة)"
+
+msgid "Amount After Discount"
+msgstr "المبلغ بعد الخصم"
+
+msgid "Amount Threshold"
+msgstr "حد المبلغ"
+
+msgid "Amounts"
+msgstr "المبالغ"
+
+msgid "Amounts of {0} need the role {1}."
+msgstr "المبالغ البالغة {0} تتطلب الدور {1}."
+
+msgid "An active tariff cannot be changed. Create a new tariff with a later start date."
+msgstr "لا يمكن تعديل تعرفة فعالة. أنشئ تعرفة جديدة بتاريخ بدء لاحق."
+
+msgid "An enabled template already exists for this event, channel, language and recipients."
+msgstr "يوجد قالب مفعَّل لهذا الحدث والقناة واللغة والمستلمين."
+
+msgid "Anbar"
+msgstr "الأنبار"
+
+msgid "Annual"
+msgstr "سنوية"
+
+msgid "Annual Family Limit"
+msgstr "الحد السنوي للعائلة"
+
+msgid "Annual Limit"
+msgstr "الحد السنوي"
+
+msgid "Annual Limit per Member"
+msgstr "الحد السنوي لكل مؤمَّن عليه"
+
+msgid "Applies To"
+msgstr "ينطبق على"
+
+msgid "Approval Levels by Amount"
+msgstr "مستويات الاعتماد حسب المبلغ"
+
+msgid "Approval Rate (%)"
+msgstr "نسبة الاعتماد (%)"
+
+msgid "Approval Required"
+msgstr "الاعتماد مطلوب"
+
+msgid "Approve"
+msgstr "اعتماد"
+
+msgid "Approved"
+msgstr "معتمد"
+
+msgid "Approved Amount"
+msgstr "المبلغ المعتمد"
+
+msgid "Approved Claims"
+msgstr "المطالبات المعتمدة"
+
+msgid "Approved Claims Payable"
+msgstr "مستحقات المطالبات المعتمدة"
+
+msgid "Approved Quantity"
+msgstr "الكمية المعتمدة"
+
+msgid "Archived"
+msgstr "مؤرشف"
+
+msgid "Archived On"
+msgstr "تاريخ الأرشفة"
+
+msgid "As on Date"
+msgstr "كما في تاريخ"
+
+msgid "Assigned"
+msgstr "مُحال"
+
+msgid "Assigned To"
+msgstr "المسؤول"
+
+msgid "Attach a file first."
+msgstr "أرفق ملفًا أولًا."
+
+msgid "Attach the Document as PDF"
+msgstr "إرفاق المستند بصيغة PDF"
+
+msgid "Attempts"
+msgstr "المحاولات"
+
+msgid "Authentication"
+msgstr "المصادقة"
+
+msgid "Authorised Contacts"
+msgstr "المسؤولون المعتمدون"
+
+msgid "Authorization Type"
+msgstr "نوع الموافقة"
+
+msgid "Available Balance"
+msgstr "الرصيد المتاح"
+
+msgid "Average Claim"
+msgstr "متوسط المطالبة"
+
+msgid "Average Hours to Decide"
+msgstr "متوسط ساعات البت"
+
+msgid "Average Resolution Hours"
+msgstr "متوسط ساعات الحل"
+
+msgid "Average per Member"
+msgstr "المتوسط لكل عضو"
+
+msgid "B"
+msgstr "B"
+
+msgid "Babil"
+msgstr "بابل"
+
+msgid "Baghdad"
+msgstr "بغداد"
+
+msgid "Balance"
+msgstr "الرصيد"
+
+msgid "Balance (calculated)"
+msgstr "الرصيد (محتسب)"
+
+msgid "Balance Alerts"
+msgstr "تنبيهات الرصيد"
+
+msgid "Bank"
+msgstr "المصرف"
+
+msgid "Bank Account"
+msgstr "الحساب المصرفي"
+
+msgid "Base Amount"
+msgstr "المبلغ الأساسي"
+
+msgid "Basic"
+msgstr "أساسية"
+
+msgid "Basra"
+msgstr "البصرة"
+
+msgid "Bearer Token"
+msgstr "رمز حامل"
+
+msgid "Benefit"
+msgstr "المنفعة"
+
+msgid "Benefit Category"
+msgstr "فئة المنفعة"
+
+msgid "Benefits"
+msgstr "المنافع"
+
+msgid "Billed Amount"
+msgstr "المبلغ المفوتر"
+
+msgid "Billed Price"
+msgstr "السعر المفوتر"
+
+msgid "Billed Services and Drugs"
+msgstr "الخدمات والأدوية المفوترة"
+
+msgid "Billed price {0} exceeds the tariff {1} ({2})"
+msgstr "السعر المفوتر {0} يتجاوز التعرفة {1} ({2})"
+
+msgid "Billing"
+msgstr "الفوترة"
+
+msgid "Body Format"
+msgstr "صيغة المحتوى"
+
+msgid "Body Template (Jinja)"
+msgstr "قالب المحتوى (Jinja)"
+
+msgid "Branch"
+msgstr "الفرع"
+
+msgid "Bus"
+msgstr "حافلة"
+
+msgid "By"
+msgstr "بواسطة"
+
+msgid "C"
+msgstr "C"
+
+msgid "CPT"
+msgstr "CPT"
+
+msgid "CPT Code"
+msgstr "رمز CPT"
+
+msgid "Calculate"
+msgstr "احتساب"
+
+msgid "Calculation"
+msgstr "الاحتساب"
+
+msgid "Call Details"
+msgstr "تفاصيل المكالمة"
+
+msgid "Call Recording Reference"
+msgstr "مرجع تسجيل المكالمة"
+
+msgid "Call Start"
+msgstr "بداية المكالمة"
+
+msgid "Cancel the payment entry first."
+msgstr "ألغِ قيد الدفع أولاً."
+
+msgid "Cancelled"
+msgstr "ملغاة"
+
+msgid "Cancels and deletes every record created by this console, with its journal entries, and restores the settings it changed. Data you entered yourself is not touched."
+msgstr "يلغي ويحذف كل سجل أنشأته هذه المنصة مع قيوده المحاسبية، ويعيد الإعدادات التي غيّرتها. البيانات التي أدخلتها أنت لا تُمس."
+
+msgid "Card Issued"
+msgstr "إصدار البطاقة"
+
+msgid "Card No."
+msgstr "رقم البطاقة"
+
+msgid "Card Validity (Months)"
+msgstr "صلاحية البطاقة (أشهر)"
+
+msgid "Cards are issued to active members only."
+msgstr "تُصدر البطاقات للأعضاء الفعالين فقط."
+
+msgid "Case Follow Up"
+msgstr "متابعة الحالة"
+
+msgid "Case Manager"
+msgstr "مدير الحالة"
+
+msgid "Case Type"
+msgstr "نوع الحالة"
+
+msgid "Category"
+msgstr "الفئة"
+
+msgid "Change"
+msgstr "التغيير"
+
+msgid "Change Status"
+msgstr "تغيير الحالة"
+
+msgid "Changes"
+msgstr "التعديلات"
+
+msgid "Channel"
+msgstr "القناة"
+
+msgid "Chapter / Group"
+msgstr "الفصل / المجموعة"
+
+msgid "Charged To"
+msgstr "يُحمَّل على"
+
+msgid "Check"
+msgstr "تحقق"
+
+msgid "Check Eligibility"
+msgstr "التحقق من الأهلية"
+
+msgid "Chronic"
+msgstr "مزمنة"
+
+msgid "Chronic Condition"
+msgstr "حالة مزمنة"
+
+msgid "Chronic Conditions Covered"
+msgstr "الأمراض المزمنة مغطاة"
+
+msgid "Chronic Medication"
+msgstr "دواء مزمن"
+
+msgid "Chronic conditions are not covered"
+msgstr "الأمراض المزمنة غير مغطاة"
+
+msgid "City"
+msgstr "المدينة"
+
+msgid "City / Area"
+msgstr "المدينة / المنطقة"
+
+msgid "Claim"
+msgstr "المطالبة"
+
+msgid "Claim Calculation"
+msgstr "احتساب المطالبة"
+
+msgid "Claim Item"
+msgstr "بند المطالبة"
+
+msgid "Claim Rejection Analysis"
+msgstr "تحليل رفض المطالبات"
+
+msgid "Claim Rejection Rate (%)"
+msgstr "نسبة رفض المطالبات (%)"
+
+msgid "Claim Rejection Reason"
+msgstr "سبب رفض المطالبة"
+
+msgid "Claim Status"
+msgstr "حالة المطالبة"
+
+msgid "Claim Status Update"
+msgstr "تحديث حالة المطالبة"
+
+msgid "Claim Type"
+msgstr "نوع المطالبة"
+
+msgid "Claim {0} belongs to another provider or currency."
+msgstr "المطالبة {0} تخص مقدم خدمة أو عملة أخرى."
+
+msgid "Claim {0} is not available for settlement."
+msgstr "المطالبة {0} غير متاحة للتسوية."
+
+msgid "Claimed"
+msgstr "المطالب به"
+
+msgid "Claimed Amount"
+msgstr "المبلغ المطالَب به"
+
+msgid "Claims"
+msgstr "المطالبات"
+
+msgid "Claims Charged"
+msgstr "المطالبات المحمَّلة"
+
+msgid "Claims Desk"
+msgstr "مكتب التعويضات"
+
+msgid "Claims From"
+msgstr "المطالبات من"
+
+msgid "Claims Officer"
+msgstr "موظف المطالبات"
+
+msgid "Claims Payable"
+msgstr "المطالبات المستحقة"
+
+msgid "Claims Pending Information"
+msgstr "مطالبات بانتظار معلومات"
+
+msgid "Claims Register"
+msgstr "سجل المطالبات"
+
+msgid "Claims To"
+msgstr "المطالبات إلى"
+
+msgid "Claims by Plan"
+msgstr "المطالبات حسب الخطة"
+
+msgid "Claims by Status"
+msgstr "المطالبات حسب الحالة"
+
+msgid "Claims by Type"
+msgstr "المطالبات حسب النوع"
+
+msgid "Claims in Progress"
+msgstr "مطالبات قيد المعالجة"
+
+msgid "Claims per 1000 Members per Year"
+msgstr "المطالبات لكل 1000 عضو سنوياً"
+
+msgid "Class"
+msgstr "الفئة"
+
+msgid "Class (Empty = All)"
+msgstr "الفئة (فارغ = الكل)"
+
+msgid "Class {0} does not exist in the plan."
+msgstr "الفئة {0} غير موجودة في الخطة."
+
+msgid "Classes"
+msgstr "الفئات"
+
+msgid "Cleaning"
+msgstr "جارٍ الحذف"
+
+msgid "Cleared"
+msgstr "محذوفة"
+
+msgid "Client"
+msgstr "العميل"
+
+msgid "Client (Optional)"
+msgstr "العميل (اختياري)"
+
+msgid "Client Contract"
+msgstr "عقد عميل"
+
+msgid "Client Name"
+msgstr "اسم العميل"
+
+msgid "Client Name (Arabic)"
+msgstr "اسم العميل (بالعربية)"
+
+msgid "Client Portal User"
+msgstr "مستخدم بوابة العميل"
+
+msgid "Client Type"
+msgstr "نوع العميل"
+
+msgid "Client {0} has no customer for receivables."
+msgstr "العميل {0} ليس له زبون للذمم المدينة."
+
+msgid "Clients"
+msgstr "العملاء"
+
+msgid "Clients It May Serve"
+msgstr "العملاء الذين يجوز له خدمتهم"
+
+msgid "Clients Using the Network"
+msgstr "العملاء المستخدمون للشبكة"
+
+msgid "Clients, Plans and Members"
+msgstr "العملاء والخطط والأعضاء"
+
+msgid "Clinic / Medical Center"
+msgstr "عيادة / مركز طبي"
+
+msgid "Close"
+msgstr "إغلاق"
+
+msgid "Closed"
+msgstr "مغلقة"
+
+msgid "Closed On"
+msgstr "تاريخ الإغلاق"
+
+msgid "Co-payment"
+msgstr "التحمل (مشاركة المؤمَّن عليه)"
+
+msgid "Co-payment (%)"
+msgstr "المشاركة بالدفع (%)"
+
+msgid "Co-payment Outside the Network (%)"
+msgstr "نسبة التحمل خارج الشبكة (%)"
+
+msgid "Code"
+msgstr "الرمز"
+
+msgid "Code Type"
+msgstr "نوع الرمز"
+
+msgid "Color"
+msgstr "اللون"
+
+msgid "Company"
+msgstr "الشركة"
+
+msgid "Complaint"
+msgstr "شكوى"
+
+msgid "Complaints"
+msgstr "الشكاوى"
+
+msgid "Completed"
+msgstr "مكتملة"
+
+msgid "Completed with Errors"
+msgstr "مكتملة مع تجاوزات"
+
+msgid "Complex"
+msgstr "معقدة"
+
+msgid "Confidential"
+msgstr "سري"
+
+msgid "Confirmed"
+msgstr "مؤكد"
+
+msgid "Consultation"
+msgstr "استشارة"
+
+msgid "Consumed (%)"
+msgstr "المستهلك (%)"
+
+msgid "Contact"
+msgstr "الاتصال"
+
+msgid "Contact Person"
+msgstr "الشخص المسؤول"
+
+msgid "Contacts"
+msgstr "جهات الاتصال"
+
+msgid "Continuous Treatment"
+msgstr "علاج مستمر"
+
+msgid "Contract"
+msgstr "العقد"
+
+msgid "Contract From"
+msgstr "بداية العقد"
+
+msgid "Contract To"
+msgstr "نهاية العقد"
+
+msgid "Contract end cannot be before the start."
+msgstr "لا يجوز أن يسبق انتهاء العقد بدايته."
+
+msgid "Contractual Discount"
+msgstr "الخصم التعاقدي"
+
+msgid "Contractual Discount (%)"
+msgstr "الخصم التعاقدي (%)"
+
+msgid "Contribution to fund {0}"
+msgstr "مساهمة في الصندوق {0}"
+
+msgid "Contributions"
+msgstr "المساهمات"
+
+msgid "Control"
+msgstr "الرقابة"
+
+msgid "Corporate"
+msgstr "شركة"
+
+msgid "Corporate Client"
+msgstr "عميل مؤسسي"
+
+msgid "Correspondence"
+msgstr "مراسلات"
+
+msgid "Cost"
+msgstr "التكلفة"
+
+msgid "Cost per Claim"
+msgstr "الكلفة لكل مطالبة"
+
+msgid "Cost per Member per Month (PMPM)"
+msgstr "الكلفة لكل عضو شهرياً (PMPM)"
+
+msgid "Cost per Message Segment"
+msgstr "تكلفة الجزء من الرسالة"
+
+msgid "Cost to Date"
+msgstr "التكلفة حتى تاريخه"
+
+msgid "Count Threshold"
+msgstr "حد العدد"
+
+msgid "Coverage"
+msgstr "التغطية"
+
+msgid "Coverage Expiring"
+msgstr "اقتراب انتهاء التغطية"
+
+msgid "Coverage From"
+msgstr "التغطية من"
+
+msgid "Coverage Mismatch"
+msgstr "عدم توافق مع التغطية"
+
+msgid "Coverage Period"
+msgstr "فترة التغطية"
+
+msgid "Coverage Rules"
+msgstr "قواعد التغطية"
+
+msgid "Coverage To"
+msgstr "التغطية إلى"
+
+msgid "Coverage end cannot be before the start."
+msgstr "لا يجوز أن يسبق انتهاء التغطية بدايتها."
+
+msgid "Coverage period ended"
+msgstr "انتهت فترة التغطية"
+
+msgid "Covered"
+msgstr "مغطى"
+
+msgid "Covered Outside the Network"
+msgstr "مغطى خارج الشبكة"
+
+msgid "Create"
+msgstr "إنشاء"
+
+msgid "Create Supplier"
+msgstr "إنشاء مورِّد"
+
+msgid "Currency"
+msgstr "العملة"
+
+msgid "Current Balance"
+msgstr "الرصيد الحالي"
+
+msgid "Current Step"
+msgstr "الخطوة الحالية"
+
+msgid "Customer"
+msgstr "زبون"
+
+msgid "Customer (for Billing and Receivables)"
+msgstr "العميل (للفوترة والذمم)"
+
+msgid "Customer Service"
+msgstr "خدمة العملاء"
+
+msgid "Dashboard"
+msgstr "لوحة التحكم"
+
+msgid "Dashboards"
+msgstr "لوحات المعلومات"
+
+msgid "Date"
+msgstr "التاريخ"
+
+msgid "Date of Birth"
+msgstr "تاريخ الميلاد"
+
+msgid "Date of Service"
+msgstr "تاريخ الخدمة"
+
+msgid "Daughter"
+msgstr "الابنة"
+
+msgid "Decided By"
+msgstr "قرّر"
+
+msgid "Decided On"
+msgstr "تاريخ القرار"
+
+msgid "Decision"
+msgstr "القرار"
+
+msgid "Decision Notes"
+msgstr "ملاحظات القرار"
+
+msgid "Deductible"
+msgstr "مبلغ التحمل"
+
+msgid "Default Annual Deductible"
+msgstr "الخصم الثابت السنوي الافتراضي"
+
+msgid "Default Bank / Cash Account for Provider Payments"
+msgstr "الحساب المصرفي / النقدي الافتراضي لدفعات مقدمي الخدمة"
+
+msgid "Default Contractual Discount (%)"
+msgstr "الخصم التعاقدي الافتراضي (%)"
+
+msgid "Default Currency"
+msgstr "العملة الافتراضية"
+
+msgid "Default Language"
+msgstr "اللغة الافتراضية"
+
+msgid "Default Member Co-payment (%)"
+msgstr "نسبة تحمل المؤمَّن عليه الافتراضية (%)"
+
+msgid "Default Price"
+msgstr "السعر الافتراضي"
+
+msgid "Default SMS Provider"
+msgstr "مزود الرسائل النصية الافتراضي"
+
+msgid "Default WhatsApp Provider"
+msgstr "مزود واتساب الافتراضي"
+
+msgid "Demo Data Console"
+msgstr "منصة بيانات العرض"
+
+msgid "Demo Walkthrough"
+msgstr "مسار العرض"
+
+msgid "Demo records"
+msgstr "سجلات العرض"
+
+msgid "Dental"
+msgstr "الأسنان"
+
+msgid "Dental Center"
+msgstr "مركز أسنان"
+
+msgid "Description"
+msgstr "الوصف"
+
+msgid "Description (Arabic)"
+msgstr "الوصف (بالعربية)"
+
+msgid "Details"
+msgstr "التفاصيل"
+
+msgid "Dhi Qar"
+msgstr "ذي قار"
+
+msgid "Diagnoses"
+msgstr "التشخيصات"
+
+msgid "Diagnosis"
+msgstr "التشخيص"
+
+msgid "Diagnosis (ICD)"
+msgstr "التشخيص (ICD)"
+
+msgid "Diagnosis excluded by the plan"
+msgstr "التشخيص مستثنى بموجب الخطة"
+
+msgid "Direct"
+msgstr "مباشر"
+
+msgid "Disabled"
+msgstr "معطَّل"
+
+msgid "Discharge Date"
+msgstr "تاريخ الخروج"
+
+msgid "Discharge cannot be before admission."
+msgstr "لا يجوز أن يسبق الخروج تاريخ التنويم."
+
+msgid "Discount"
+msgstr "خصم"
+
+msgid "Discount Override (%)"
+msgstr "تجاوز الخصم (%)"
+
+msgid "Discount, Deductible, Co-payment, Limit"
+msgstr "الخصم، الخصم الثابت، التحمل، الحد"
+
+msgid "Discount, Limit, Deductible, Co-payment"
+msgstr "الخصم، الحد، الخصم الثابت، التحمل"
+
+msgid "Diyala"
+msgstr "ديالى"
+
+msgid "Doctor"
+msgstr "طبيب"
+
+msgid "Document"
+msgstr "المستند"
+
+msgid "Document Retention (Years)"
+msgstr "مدة حفظ المستندات (بالسنوات)"
+
+msgid "Document Type"
+msgstr "نوع المستند"
+
+msgid "Documentation"
+msgstr "المستندات"
+
+msgid "Documents"
+msgstr "المستندات"
+
+msgid "Documents are kept for their retention period and cannot be deleted before it ends."
+msgstr "تُحفظ المستندات طوال مدة الاحتفاظ ولا يجوز حذفها قبل انتهائها."
+
+msgid "Dosage Form"
+msgstr "الشكل الدوائي"
+
+msgid "Draft"
+msgstr "مسودة"
+
+msgid "Drug"
+msgstr "دواء"
+
+msgid "Drug Code"
+msgstr "رمز الدواء"
+
+msgid "Drug Diagnosis"
+msgstr "تشخيص الدواء"
+
+msgid "Drug Pattern"
+msgstr "نمط صرف الأدوية"
+
+msgid "Drug excluded by the plan"
+msgstr "الدواء مستثنى بموجب الخطة"
+
+msgid "Duhok"
+msgstr "دهوك"
+
+msgid "Duplicate"
+msgstr "مكرر"
+
+msgid "Duplicate Claim"
+msgstr "مطالبة مكررة"
+
+msgid "Duplicate Claim Window (Days)"
+msgstr "نافذة اكتشاف التكرار (أيام)"
+
+msgid "Duplicate Key"
+msgstr "مفتاح التكرار"
+
+msgid "Duration"
+msgstr "المدة"
+
+msgid "Duration (Seconds)"
+msgstr "المدة (ثوانٍ)"
+
+msgid "Edit the claim workflow here. Empty = every change is allowed"
+msgstr "عدّل سير عمل المطالبة هنا. فارغ = كل تغيير مسموح"
+
+msgid "Eligibility"
+msgstr "الأهلية"
+
+msgid "Eligibility Checks"
+msgstr "فحوصات الأهلية"
+
+msgid "Eligible"
+msgstr "مستحق"
+
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+msgid "Emergencies Covered"
+msgstr "الطوارئ مغطاة"
+
+msgid "Emergencies are not covered"
+msgstr "الحالات الطارئة غير مغطاة"
+
+msgid "Emergency"
+msgstr "طوارئ"
+
+msgid "Employee"
+msgstr "موظف"
+
+msgid "Employee No."
+msgstr "الرقم الوظيفي"
+
+msgid "Employer"
+msgstr "جهة العمل"
+
+msgid "Employment"
+msgstr "العمل"
+
+msgid "Enabled"
+msgstr "مفعَّل"
+
+msgid "Endpoint"
+msgstr "نقطة الاتصال"
+
+msgid "Endpoint URL"
+msgstr "عنوان الواجهة"
+
+msgid "Enter the card number or the national ID of the member."
+msgstr "أدخل رقم بطاقة العضو أو رقم هويته الوطنية."
+
+msgid "Enter the card number or the national ID."
+msgstr "أدخل رقم البطاقة أو رقم الهوية الوطنية."
+
+msgid "Enter the information requested."
+msgstr "أدخل المعلومات المطلوبة."
+
+msgid "Enter the invoice data and the billed services. Prices are checked against your tariff."
+msgstr "أدخل بيانات الفاتورة والخدمات المفوترة. تُراجع الأسعار بالمقارنة مع تعرفتك."
+
+msgid "Enter the reason."
+msgstr "أدخل السبب."
+
+msgid "Enter the resolution."
+msgstr "أدخل الحل المتخذ."
+
+msgid "Enter the subject of the email."
+msgstr "أدخل موضوع البريد."
+
+msgid "Entity"
+msgstr "الجهة"
+
+msgid "Erbil"
+msgstr "أربيل"
+
+msgid "Error"
+msgstr "الخطأ"
+
+msgid "Escalated"
+msgstr "مُصعَّدة"
+
+msgid "Escalation Level"
+msgstr "مستوى التصعيد"
+
+msgid "Event"
+msgstr "الحدث"
+
+msgid "Excluded by the plan ({0})"
+msgstr "مستثنى بموجب الخطة ({0})"
+
+msgid "Exclusion Type"
+msgstr "نوع الاستثناء"
+
+msgid "Exclusions"
+msgstr "الاستثناءات"
+
+msgid "Expected Days"
+msgstr "الأيام المتوقعة"
+
+msgid "Expired"
+msgstr "منتهية"
+
+msgid "Extends Authorization"
+msgstr "يمدِّد الموافقة"
+
+msgid "Extension"
+msgstr "توسعة"
+
+msgid "Extra Headers (JSON)"
+msgstr "ترويسات إضافية (JSON)"
+
+msgid "Extra headers must be valid JSON."
+msgstr "يجب أن تكون الترويسات الإضافية بصيغة JSON صحيحة."
+
+msgid "Extracted Text"
+msgstr "النص المستخرج"
+
+msgid "FWA Alert"
+msgstr "تنبيه احتيال / هدر / سوء استخدام"
+
+msgid "FWA Rule"
+msgstr "قاعدة احتيال / هدر / سوء استخدام"
+
+msgid "FWA Watchlist"
+msgstr "قائمة المراقبة"
+
+msgid "Failed"
+msgstr "فشل"
+
+msgid "False Positive"
+msgstr "إنذار كاذب"
+
+msgid "Family Limit"
+msgstr "حد العائلة"
+
+msgid "Family Shared"
+msgstr "مشترك للعائلة"
+
+msgid "Father"
+msgstr "الأب"
+
+msgid "Fee Basis"
+msgstr "أساس الأتعاب"
+
+msgid "Fee Rate / Amount"
+msgstr "نسبة / مبلغ الأتعاب"
+
+msgid "Female"
+msgstr "أنثى"
+
+msgid "File"
+msgstr "الملف"
+
+msgid "Finance Desk"
+msgstr "المكتب المالي"
+
+msgid "Financial Review"
+msgstr "مراجعة مالية"
+
+msgid "Financial Reviewer"
+msgstr "المراجع المالي"
+
+msgid "Find a Provider"
+msgstr "البحث عن مقدم خدمة"
+
+msgid "Finished On"
+msgstr "انتهت في"
+
+msgid "First Response (Hours)"
+msgstr "أول رد (ساعات)"
+
+msgid "First Response On"
+msgstr "تاريخ أول رد"
+
+msgid "Fiscal Year"
+msgstr "السنة المالية"
+
+msgid "Fixed Deductible"
+msgstr "خصم ثابت"
+
+msgid "Fixed per Month"
+msgstr "مبلغ ثابت شهريًا"
+
+msgid "Flag Only"
+msgstr "تنبيه فقط"
+
+msgid "Flagged for Review"
+msgstr "مُعلَّمة للمراجعة"
+
+msgid "Follow-ups"
+msgstr "المتابعات"
+
+msgid "Form"
+msgstr "نموذج"
+
+msgid "Fraud"
+msgstr "احتيال"
+
+msgid "Fraud Alerts"
+msgstr "تنبيهات الاحتيال"
+
+msgid "Fraud Alerts by Severity"
+msgstr "تنبيهات الاحتيال حسب الخطورة"
+
+msgid "Fraud Control"
+msgstr "مكافحة الاحتيال"
+
+msgid "Frequency"
+msgstr "الدورية"
+
+msgid "From"
+msgstr "من"
+
+msgid "From Date"
+msgstr "من تاريخ"
+
+msgid "From Status"
+msgstr "من حالة"
+
+msgid "Full"
+msgstr "كامل"
+
+msgid "Fund"
+msgstr "الصندوق"
+
+msgid "Fund Account"
+msgstr "حساب الصندوق"
+
+msgid "Fund Available Balance"
+msgstr "الرصيد المتاح للصناديق"
+
+msgid "Fund Balances"
+msgstr "أرصدة الصناديق"
+
+msgid "Fund Contribution"
+msgstr "مساهمة في صندوق"
+
+msgid "Fund Name"
+msgstr "اسم الصندوق"
+
+msgid "Fund {0}: the available balance {1} is below {2}"
+msgstr "الصندوق {0}: الرصيد المتاح {1} أقل من {2}"
+
+msgid "Funding Model"
+msgstr "نموذج التمويل"
+
+msgid "Funding Parties"
+msgstr "الجهات الممولة"
+
+msgid "Funding Party"
+msgstr "جهة ممولة"
+
+msgid "Funding shares must total 100% (currently {0}%)."
+msgstr "يجب أن يبلغ مجموع حصص التمويل 100% (الحالي {0}%)."
+
+msgid "Funds"
+msgstr "الصناديق"
+
+msgid "GET"
+msgstr "GET"
+
+msgid "Gender"
+msgstr "الجنس"
+
+msgid "Gender Condition"
+msgstr "شرط الجنس"
+
+msgid "General"
+msgstr "عام"
+
+msgid "Generate demo data"
+msgstr "إنشاء بيانات العرض"
+
+msgid "Generate the {0} demo data set now? It runs in the background; you can leave this page."
+msgstr "إنشاء مجموعة بيانات العرض ({0}) الآن؟ تعمل في الخلفية ويمكنك مغادرة الصفحة."
+
+msgid "Generic (Scientific) Name"
+msgstr "الاسم العلمي"
+
+msgid "Governorate"
+msgstr "المحافظة"
+
+msgid "Group"
+msgstr "جماعية"
+
+msgid "Group By"
+msgstr "التجميع حسب"
+
+msgid "HTTP Method"
+msgstr "طريقة HTTP"
+
+msgid "Halabja"
+msgstr "حلبجة"
+
+msgid "Header / Parameter / User Name"
+msgstr "الترويسة / المعامل / اسم المستخدم"
+
+msgid "Header Key"
+msgstr "مفتاح ترويسة"
+
+msgid "Health"
+msgstr "الصحي"
+
+msgid "Health Fund"
+msgstr "صندوق صحي"
+
+msgid "Health Fund Position"
+msgstr "مركز الصناديق الصحية"
+
+msgid "Health Funds Liability Account"
+msgstr "حساب التزامات الصناديق الصحية"
+
+msgid "Health Insurance Card"
+msgstr "بطاقة التأمين الصحي"
+
+msgid "Health Insurance Portal"
+msgstr "بوابة التأمين الصحي"
+
+msgid "Health Plan"
+msgstr "برنامج تأمين صحي"
+
+msgid "Health TPA"
+msgstr "التأمين الصحي (إدارة المطالبات)"
+
+msgid "Health members"
+msgstr "الأعضاء الصحيون"
+
+msgid "Help and Complaints"
+msgstr "المساعدة والشكاوى"
+
+msgid "High"
+msgstr "مرتفع"
+
+msgid "High Cost"
+msgstr "مرتفعة التكلفة"
+
+msgid "High Cost Case"
+msgstr "حالة مرتفعة التكلفة"
+
+msgid "High Frequency"
+msgstr "تكرار مرتفع"
+
+msgid "High cost claim: {0}"
+msgstr "مطالبة مرتفعة الكلفة: {0}"
+
+msgid "History"
+msgstr "السجل"
+
+msgid "History (months)"
+msgstr "التاريخ (بالأشهر)"
+
+msgid "Hold for Review"
+msgstr "إيقاف للمراجعة"
+
+msgid "Hospital"
+msgstr "مستشفى"
+
+msgid "How to use this card"
+msgstr "طريقة استخدام البطاقة"
+
+msgid "IBAN / Account No."
+msgstr "IBAN / رقم الحساب"
+
+msgid "ICD-10"
+msgstr "ICD-10"
+
+msgid "ICD-11"
+msgstr "ICD-11"
+
+msgid "Import"
+msgstr "استيراد"
+
+msgid "In Progress"
+msgstr "قيد المعالجة"
+
+msgid "In the network"
+msgstr "ضمن الشبكة"
+
+msgid "In-App"
+msgstr "داخل النظام"
+
+msgid "Individual"
+msgstr "فرد"
+
+msgid "Information Requested"
+msgstr "طُلبت معلومات إضافية"
+
+msgid "Information requested"
+msgstr "المعلومات المطلوبة"
+
+msgid "Inpatient"
+msgstr "تنويم"
+
+msgid "Inpatient Admission"
+msgstr "تنويم داخلي"
+
+msgid "Inpatient Stay"
+msgstr "إقامة داخلية"
+
+msgid "Inquiry"
+msgstr "استفسار"
+
+msgid "Insurance"
+msgstr "التأمين"
+
+msgid "Insurance Accountant"
+msgstr "محاسب التأمين"
+
+msgid "Insurance Auditor"
+msgstr "مدقق التأمين"
+
+msgid "Insurance Company"
+msgstr "شركة تأمين"
+
+msgid "Insurance Company (for Corporate Clients)"
+msgstr "شركة التأمين (للعملاء المؤسسيين)"
+
+msgid "Insurance Company Funded"
+msgstr "ممول من شركة تأمين"
+
+msgid "Insurance Document"
+msgstr "مستند تأمين"
+
+msgid "Insurance Manager"
+msgstr "مدير التأمين"
+
+msgid "Insurance Notification Template"
+msgstr "قالب إشعار التأمين"
+
+msgid "Insurer"
+msgstr "شركة التأمين"
+
+msgid "Insurer Contract"
+msgstr "عقد شركة تأمين"
+
+msgid "Internal Alert"
+msgstr "تنبيه داخلي"
+
+msgid "Internal Role"
+msgstr "دور داخلي"
+
+msgid "Internal notifications use the In-App or Email channel."
+msgstr "تستخدم الإشعارات الداخلية قناة داخل النظام أو البريد."
+
+msgid "Invalid decision."
+msgstr "قرار غير صالح."
+
+msgid "Investigation"
+msgstr "تحقيق"
+
+msgid "Investigation Outcome"
+msgstr "نتيجة التحقيق"
+
+msgid "Investigator"
+msgstr "المحقق"
+
+msgid "Invoice"
+msgstr "فاتورة"
+
+msgid "Invoice Date"
+msgstr "تاريخ الفاتورة"
+
+msgid "Invoice No."
+msgstr "رقم الفاتورة"
+
+msgid "Invoice and Service"
+msgstr "الفاتورة والخدمة"
+
+msgid "Invoice {0} of this provider was already submitted."
+msgstr "الفاتورة {0} لهذا المقدم سبق تقديمها."
+
+msgid "Issue"
+msgstr "إصدار"
+
+msgid "Issue Cards for a Plan"
+msgstr "إصدار بطاقات لخطة"
+
+msgid "Issue Date"
+msgstr "تاريخ الإصدار"
+
+msgid "Item"
+msgstr "البند"
+
+msgid "Item Decision"
+msgstr "قرار البند"
+
+msgid "Items"
+msgstr "البنود"
+
+msgid "JSON"
+msgstr "JSON"
+
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+msgid "Karbala"
+msgstr "كربلاء"
+
+msgid "Keyword"
+msgstr "كلمة مفتاحية"
+
+msgid "Kirkuk"
+msgstr "كركوك"
+
+msgid "Laboratory"
+msgstr "مختبر"
+
+msgid "Laboratory and Radiology"
+msgstr "المختبرات والأشعة"
+
+msgid "Language"
+msgstr "اللغة"
+
+msgid "Last Alert"
+msgstr "آخر تنبيه"
+
+msgid "Latest Version"
+msgstr "الإصدار الأحدث"
+
+msgid "Latitude"
+msgstr "خط العرض"
+
+msgid "Leave empty for all clients"
+msgstr "اتركه فارغًا لجميع العملاء"
+
+msgid "Leave empty to use the default provider of the channel"
+msgstr "اتركه فارغًا لاستخدام المزود الافتراضي للقناة"
+
+msgid "Leave empty when the drug is not restricted to diagnoses"
+msgstr "اتركه فارغًا إن لم يُقيَّد الدواء بتشخيصات"
+
+msgid "Length of stay of {0} days"
+msgstr "مدة إقامة {0} يوماً"
+
+msgid "Level"
+msgstr "المستوى"
+
+msgid "Liability"
+msgstr "المسؤولية المدنية"
+
+msgid "Liability account that holds the money of this fund"
+msgstr "حساب التزامات يحتفظ بأموال هذا الصندوق"
+
+msgid "License & Contract"
+msgstr "الترخيص والعقد"
+
+msgid "License Expiry"
+msgstr "انتهاء الترخيص"
+
+msgid "License No."
+msgstr "رقم الترخيص"
+
+msgid "Limit"
+msgstr "الحد"
+
+msgid "Limit Applies To"
+msgstr "ينطبق الحد على"
+
+msgid "Limit Shared by the Family"
+msgstr "الحد مشترك بين أفراد العائلة"
+
+msgid "Limit per Visit / Service"
+msgstr "الحد لكل زيارة / خدمة"
+
+msgid "Limits & Cost Sharing"
+msgstr "الحدود والتحمل"
+
+msgid "Link a supplier to be able to pay this provider."
+msgstr "اربط موردا ليتسنى الدفع لهذا المقدم."
+
+msgid "Load the claims to settle."
+msgstr "حمّل المطالبات المراد تسويتها."
+
+msgid "Local"
+msgstr "محلي"
+
+msgid "Location & Contact"
+msgstr "الموقع والاتصال"
+
+msgid "Log"
+msgstr "السجل"
+
+msgid "Long Stay"
+msgstr "إقامة طويلة"
+
+msgid "Longitude"
+msgstr "خط الطول"
+
+msgid "Lost"
+msgstr "مفقود"
+
+msgid "Low"
+msgstr "منخفض"
+
+msgid "Main Provider (for Branches)"
+msgstr "المزود الرئيس (للفروع)"
+
+msgid "Make"
+msgstr "الصنع"
+
+msgid "Male"
+msgstr "ذكر"
+
+msgid "Manual"
+msgstr "يدوي"
+
+msgid "Maternity"
+msgstr "الأمومة والولادة"
+
+msgid "Maximum Age"
+msgstr "أقصى عمر"
+
+msgid "Maximum Days of Supply"
+msgstr "أقصى عدد أيام للصرف"
+
+msgid "Maximum Open Items"
+msgstr "أقصى عدد بنود مفتوحة"
+
+msgid "Maximum Quantity per Dispensing"
+msgstr "أقصى كمية لكل صرف"
+
+msgid "Maximum Sending Attempts"
+msgstr "الحد الأقصى لمحاولات الإرسال"
+
+msgid "Maysan"
+msgstr "ميسان"
+
+msgid "Medical Card"
+msgstr "بطاقة طبية"
+
+msgid "Medical Case"
+msgstr "حالة طبية"
+
+msgid "Medical Claim"
+msgstr "مطالبة طبية"
+
+msgid "Medical Code"
+msgstr "رمز طبي"
+
+msgid "Medical Necessity"
+msgstr "الضرورة الطبية"
+
+msgid "Medical Notes"
+msgstr "الملاحظات الطبية"
+
+msgid "Medical Notes and Report"
+msgstr "الملاحظات والتقرير الطبي"
+
+msgid "Medical Provider"
+msgstr "مقدم خدمة طبية"
+
+msgid "Medical Report"
+msgstr "تقرير طبي"
+
+msgid "Medical Review"
+msgstr "مراجعة طبية"
+
+msgid "Medical Reviewer"
+msgstr "المراجع الطبي"
+
+msgid "Medical Service"
+msgstr "خدمة طبية"
+
+msgid "Medical Utilization Analysis"
+msgstr "تحليل الاستخدام الطبي"
+
+msgid "Medical claim {0} - {1}"
+msgstr "مطالبة طبية {0} - {1}"
+
+msgid "Medical claims"
+msgstr "المطالبات الطبية"
+
+msgid "Medicines Covered"
+msgstr "الأدوية مغطاة"
+
+msgid "Medicines are not covered"
+msgstr "الأدوية غير مغطاة"
+
+msgid "Medium"
+msgstr "متوسط"
+
+msgid "Member"
+msgstr "مؤمَّن عليه"
+
+msgid "Member Activated"
+msgstr "تفعيل العضو"
+
+msgid "Member Co-payment"
+msgstr "تحمل المؤمَّن عليه"
+
+msgid "Member Co-payment (%)"
+msgstr "تحمل المؤمَّن عليه (%)"
+
+msgid "Member Document"
+msgstr "مستند عضو"
+
+msgid "Member Months"
+msgstr "أشهر العضوية"
+
+msgid "Member Name"
+msgstr "اسم المؤمَّن عليه"
+
+msgid "Member Share"
+msgstr "حصة المؤمَّن عليه"
+
+msgid "Member Status Log"
+msgstr "سجل حالة العضوية"
+
+msgid "Members"
+msgstr "الأعضاء"
+
+msgid "Members by Plan"
+msgstr "الأعضاء حسب الخطة"
+
+msgid "Members with Claims"
+msgstr "أعضاء لديهم مطالبات"
+
+msgid "Membership / Card No."
+msgstr "رقم العضوية / البطاقة"
+
+msgid "Membership is {0}"
+msgstr "حالة العضوية: {0}"
+
+msgid "Message"
+msgstr "الرسالة"
+
+msgid "Message (Jinja)"
+msgstr "الرسالة (Jinja)"
+
+msgid "Method"
+msgstr "الطريقة"
+
+msgid "Minimum Age"
+msgstr "أدنى عمر"
+
+msgid "Minimum Days Between Fills"
+msgstr "أدنى أيام بين الصرفات"
+
+msgid "Minimum Fee per Period"
+msgstr "أدنى أتعاب للفترة"
+
+msgid "Mobile No."
+msgstr "رقم الهاتف المحمول"
+
+msgid "Model"
+msgstr "النموذج"
+
+msgid "Monitoring"
+msgstr "قيد المتابعة"
+
+msgid "Month"
+msgstr "الشهر"
+
+msgid "Monthly"
+msgstr "شهرية"
+
+msgid "Monthly Claimed Amount"
+msgstr "المبالغ المطالب بها شهرياً"
+
+msgid "Monthly Payable Amount"
+msgstr "المبالغ المستحقة شهرياً"
+
+msgid "Monthly Volume From"
+msgstr "الحجم الشهري من"
+
+msgid "Months"
+msgstr "الأشهر"
+
+msgid "Mother"
+msgstr "الأم"
+
+msgid "Multiple Funding Sources"
+msgstr "مصادر تمويل متعددة"
+
+msgid "Muthanna"
+msgstr "المثنى"
+
+msgid "My Card"
+msgstr "بطاقتي"
+
+msgid "My Coverage"
+msgstr "تغطيتي"
+
+msgid "Najaf"
+msgstr "النجف"
+
+msgid "Name"
+msgstr "الاسم"
+
+msgid "Name (Arabic)"
+msgstr "الاسم (بالعربية)"
+
+msgid "National ID"
+msgstr "البطاقة الوطنية"
+
+msgid "National ID / Civil Status ID"
+msgstr "الهوية / المستمسك المدني"
+
+msgid "Net"
+msgstr "الصافي"
+
+msgid "Net Payable"
+msgstr "صافي المستحق"
+
+msgid "Network"
+msgstr "الشبكة"
+
+msgid "Network (when not provider specific)"
+msgstr "الشبكة (عند عدم تخصيص مقدم الخدمة)"
+
+msgid "Network Client"
+msgstr "عميل الشبكة"
+
+msgid "Network Name"
+msgstr "اسم الشبكة"
+
+msgid "Networks"
+msgstr "الشبكات"
+
+msgid "Networks, Specialities and Clients"
+msgstr "الشبكات والتخصصات والعملاء"
+
+msgid "Next Follow-up"
+msgstr "المتابعة التالية"
+
+msgid "Nineveh"
+msgstr "نينوى"
+
+msgid "No"
+msgstr "لا"
+
+msgid "No WhatsApp provider is configured."
+msgstr "لم يُضبط مزود واتساب."
+
+msgid "No background worker is running. Start the bench (bench start) so the job can run."
+msgstr "لا يوجد عامل خلفي يعمل. شغّل الخادم (bench start) لتبدأ العملية."
+
+msgid "No member matches the data entered."
+msgstr "لا يوجد عضو مطابق للبيانات المدخلة."
+
+msgid "No records."
+msgstr "لا توجد سجلات."
+
+msgid "None"
+msgstr "لا يوجد"
+
+msgid "Not Covered"
+msgstr "غير مغطى"
+
+msgid "Not Eligible"
+msgstr "غير مستحق"
+
+msgid "Not Rated"
+msgstr "غير مصنَّف"
+
+msgid "Not permitted."
+msgstr "غير مسموح."
+
+msgid "Note"
+msgstr "ملاحظة"
+
+msgid "Notes"
+msgstr "ملاحظات"
+
+msgid "Nothing can be approved. Reject the request instead."
+msgstr "لا يوجد ما يمكن اعتماده. ارفض الطلب بدلاً من ذلك."
+
+msgid "Nothing is payable. Reject the claim instead."
+msgstr "لا يوجد مبلغ مستحق الدفع. ارفض المطالبة بدلاً من ذلك."
+
+msgid "Nothing was removed."
+msgstr "لم يُحذف شيء."
+
+msgid "Notifications"
+msgstr "الإشعارات"
+
+msgid "Number of Members"
+msgstr "عدد الأعضاء"
+
+msgid "OCR needs the pytesseract package and the Tesseract engine on the server."
+msgstr "يحتاج OCR إلى حزمة pytesseract ومحرك Tesseract على الخادم."
+
+msgid "Only a draft request can be submitted."
+msgstr "لا يمكن تقديم إلا الطلب المسودة."
+
+msgid "Only a draft tariff can be activated."
+msgstr "لا يمكن تفعيل إلا التعرفة المسودة."
+
+msgid "Only a scheduled or failed notification can be cancelled."
+msgstr "لا يُلغى إلا إشعار مجدول أو فاشل."
+
+msgid "Only an active card can be replaced."
+msgstr "لا يمكن استبدال إلا البطاقة الفعالة."
+
+msgid "Only the role {0} can make this change."
+msgstr "الدور {0} وحده يملك صلاحية هذا التغيير."
+
+msgid "Open"
+msgstr "مفتوحة"
+
+msgid "Open Fraud Alerts"
+msgstr "تنبيهات احتيال مفتوحة"
+
+msgid "Open Items"
+msgstr "البنود المفتوحة"
+
+msgid "Open Pre-Authorizations"
+msgstr "موافقات مسبقة مفتوحة"
+
+msgid "Open Tickets"
+msgstr "تذاكر مفتوحة"
+
+msgid "Open the portal in a private window"
+msgstr "افتح البوابة في نافذة خاصة"
+
+msgid "Opened On"
+msgstr "تاريخ الفتح"
+
+msgid "Opened automatically by claim {0}"
+msgstr "فُتحت تلقائياً بسبب المطالبة {0}"
+
+msgid "Optical"
+msgstr "البصريات"
+
+msgid "Order"
+msgstr "الترتيب"
+
+msgid "Order of Calculation"
+msgstr "ترتيب الاحتساب"
+
+msgid "Other"
+msgstr "أخرى"
+
+msgid "Other Specialty"
+msgstr "تخصص آخر"
+
+msgid "Out-of-Network"
+msgstr "خارج الشبكة"
+
+msgid "Outpatient"
+msgstr "عيادة خارجية"
+
+msgid "Outside-Network Treatment Covered"
+msgstr "العلاج خارج الشبكة مغطى"
+
+msgid "Outstanding"
+msgstr "المستحق"
+
+msgid "Over 90 Days"
+msgstr "أكثر من 90 يوماً"
+
+msgid "Overall Limit"
+msgstr "الحد الإجمالي"
+
+msgid "Overdue"
+msgstr "متأخرة"
+
+msgid "PAA"
+msgstr "PAA"
+
+msgid "PDF"
+msgstr "PDF"
+
+msgid "PMPM Cost Analysis"
+msgstr "تحليل كلفة العضو شهرياً (PMPM)"
+
+msgid "POST"
+msgstr "POST"
+
+msgid "Pack Size"
+msgstr "حجم العبوة"
+
+msgid "Paid"
+msgstr "مدفوع"
+
+msgid "Paid Claims"
+msgstr "المطالبات المدفوعة"
+
+msgid "Paid On"
+msgstr "تاريخ الدفع"
+
+msgid "Parameters"
+msgstr "المعاملات"
+
+msgid "Parent Code"
+msgstr "الرمز الأعلى"
+
+msgid "Partial"
+msgstr "جزئية"
+
+msgid "Partially Approved"
+msgstr "معتمد جزئيًا"
+
+msgid "Parties"
+msgstr "الأطراف"
+
+msgid "Payable"
+msgstr "المستحق"
+
+msgid "Payable by Provider"
+msgstr "المستحق حسب مقدم الخدمة"
+
+msgid "Payable to the Provider"
+msgstr "المستحق لمقدم الخدمة"
+
+msgid "Payer Share"
+msgstr "حصة الجهة الدافعة"
+
+msgid "Payment"
+msgstr "الدفعة"
+
+msgid "Payment Entry"
+msgstr "سند الدفع والقبض"
+
+msgid "Penalty"
+msgstr "غرامة"
+
+msgid "Pending"
+msgstr "قيد الانتظار"
+
+msgid "Pending Information"
+msgstr "بانتظار المعلومات"
+
+msgid "Per Member Per Month"
+msgstr "لكل مؤمَّن عليه شهريًا"
+
+msgid "Percent"
+msgstr "نسبة مئوية"
+
+msgid "Percent Threshold"
+msgstr "حد النسبة"
+
+msgid "Percent of Claims"
+msgstr "نسبة من المطالبات"
+
+msgid "Percent of Premium"
+msgstr "نسبة من القسط"
+
+msgid "Performance (updated automatically)"
+msgstr "الأداء (يُحدَّث تلقائيًا)"
+
+msgid "Period"
+msgstr "الفترة"
+
+msgid "Period & Network"
+msgstr "الفترة والشبكة"
+
+msgid "Period (Days)"
+msgstr "المدة (بالأيام)"
+
+msgid "Period From"
+msgstr "مدة التأمين من"
+
+msgid "Period To"
+msgstr "مدة التأمين إلى"
+
+msgid "Personal Data"
+msgstr "البيانات الشخصية"
+
+msgid "Pharmacy"
+msgstr "صيدلية"
+
+msgid "Phone"
+msgstr "الهاتف"
+
+msgid "Photo"
+msgstr "الصورة"
+
+msgid "Physiotherapy"
+msgstr "علاج طبيعي"
+
+msgid "Physiotherapy Center"
+msgstr "مركز علاج طبيعي"
+
+msgid "Plan"
+msgstr "البرنامج"
+
+msgid "Plan (Optional)"
+msgstr "البرنامج (اختياري)"
+
+msgid "Plan Benefit"
+msgstr "منفعة البرنامج"
+
+msgid "Plan Class"
+msgstr "فئة البرنامج"
+
+msgid "Plan Exclusion"
+msgstr "استثناء البرنامج"
+
+msgid "Plan Funding Source"
+msgstr "مصدر تمويل البرنامج"
+
+msgid "Plan Member"
+msgstr "عضو في برنامج"
+
+msgid "Plan Name"
+msgstr "اسم البرنامج"
+
+msgid "Plan Name (Arabic)"
+msgstr "اسم البرنامج (بالعربية)"
+
+msgid "Plan Period From"
+msgstr "فترة البرنامج من"
+
+msgid "Plan Period To"
+msgstr "فترة البرنامج إلى"
+
+msgid "Plan Utilization"
+msgstr "استخدام الخطط"
+
+msgid "Plan Year Starts in Month"
+msgstr "تبدأ سنة البرنامج في الشهر"
+
+msgid "Plan end date cannot be before its start."
+msgstr "لا يجوز أن يسبق تاريخ انتهاء الخطة تاريخ بدايتها."
+
+msgid "Please sign in to continue."
+msgstr "يرجى تسجيل الدخول للمتابعة."
+
+msgid "Portal"
+msgstr "البوابة"
+
+msgid "Portal Role"
+msgstr "دور البوابة"
+
+msgid "Portal User"
+msgstr "مستخدم البوابة"
+
+msgid "Portal Users"
+msgstr "مستخدمو البوابة"
+
+msgid "Posting Date"
+msgstr "تاريخ الترحيل"
+
+msgid "Pre-Auth Item"
+msgstr "بند موافقة مسبقة"
+
+msgid "Pre-Auth Requested"
+msgstr "طلب موافقة مسبقة"
+
+msgid "Pre-Authorization"
+msgstr "موافقة مسبقة"
+
+msgid "Pre-Authorization Above Amount"
+msgstr "موافقة مسبقة فوق مبلغ"
+
+msgid "Pre-Authorization Decision"
+msgstr "قرار الموافقة المسبقة"
+
+msgid "Pre-Authorization Validity (Days)"
+msgstr "صلاحية الموافقة المسبقة (أيام)"
+
+msgid "Pre-Authorization and Claims"
+msgstr "الموافقات المسبقة والمطالبات"
+
+msgid "Pre-Authorizations"
+msgstr "الموافقات المسبقة"
+
+msgid "Pre-Authorizations by Status"
+msgstr "الموافقات المسبقة حسب الحالة"
+
+msgid "Pre-authorization is required"
+msgstr "الموافقة المسبقة مطلوبة"
+
+msgid "Pre-authorizations"
+msgstr "الموافقات المسبقة"
+
+msgid "Pre-existing Conditions"
+msgstr "الحالات المرضية السابقة"
+
+msgid "Pre-existing Conditions Covered"
+msgstr "الحالات السابقة مغطاة"
+
+msgid "Preauthorization Turnaround"
+msgstr "زمن إنجاز الموافقات المسبقة"
+
+msgid "Preferred Language"
+msgstr "اللغة المفضلة"
+
+msgid "Pregnancy and Delivery Covered"
+msgstr "الحمل والولادة مغطيان"
+
+msgid "Pregnancy and delivery are not covered"
+msgstr "الحمل والولادة غير مغطيين"
+
+msgid "Premium"
+msgstr "القسط"
+
+msgid "Prescription"
+msgstr "وصفة طبية"
+
+msgid "Present this card with an official ID at the provider before receiving any service."
+msgstr "أبرز هذه البطاقة مع هوية رسمية لدى مقدم الخدمة قبل تلقي أي خدمة."
+
+msgid "Previously Paid"
+msgstr "مدفوع سابقًا"
+
+msgid "Price"
+msgstr "السعر"
+
+msgid "Price Above Tariff"
+msgstr "سعر أعلى من التعرفة"
+
+msgid "Price Tolerance Above Tariff (%)"
+msgstr "هامش السعر فوق التعرفة (%)"
+
+msgid "Prices"
+msgstr "الأسعار"
+
+msgid "Pricing"
+msgstr "التسعير"
+
+msgid "Principal"
+msgstr "المؤمَّن الرئيسي"
+
+msgid "Principal Member"
+msgstr "المؤمَّن عليه الرئيسي"
+
+msgid "Printed"
+msgstr "مطبوعة"
+
+msgid "Priority"
+msgstr "الأولوية"
+
+msgid "Private"
+msgstr "خصوصي"
+
+msgid "Progress"
+msgstr "نسبة الإنجاز"
+
+msgid "Provider"
+msgstr "المزود"
+
+msgid "Provider (Optional)"
+msgstr "المزود (اختياري)"
+
+msgid "Provider API"
+msgstr "واجهة المزود"
+
+msgid "Provider Client Row"
+msgstr "عميل مقدم الخدمة"
+
+msgid "Provider Contact"
+msgstr "جهة اتصال مقدم الخدمة"
+
+msgid "Provider Contract"
+msgstr "عقد مقدم خدمة"
+
+msgid "Provider Cost Spike"
+msgstr "ارتفاع تكلفة مقدم الخدمة"
+
+msgid "Provider Name"
+msgstr "اسم المزود"
+
+msgid "Provider Name (Arabic)"
+msgstr "اسم مقدم الخدمة (بالعربية)"
+
+msgid "Provider Network"
+msgstr "شبكة مقدمي الخدمة"
+
+msgid "Provider Network Row"
+msgstr "شبكة مقدم الخدمة"
+
+msgid "Provider Payables Aging"
+msgstr "أعمار مستحقات مقدمي الخدمة"
+
+msgid "Provider Performance"
+msgstr "أداء مقدمي الخدمة"
+
+msgid "Provider Portal"
+msgstr "بوابة مقدمي الخدمة"
+
+msgid "Provider Settlement"
+msgstr "تسوية مقدم خدمة"
+
+msgid "Provider Speciality"
+msgstr "تخصص مقدم الخدمة"
+
+msgid "Provider Tariff"
+msgstr "تعرفة مقدم الخدمة"
+
+msgid "Provider Type"
+msgstr "نوع مقدم الخدمة"
+
+msgid "Provider answered {0}: {1}"
+msgstr "ردّ المزود {0}: {1}"
+
+msgid "Provider {0} has no supplier for payments."
+msgstr "مقدم الخدمة {0} ليس له مورد للمدفوعات."
+
+msgid "Provider {0} is disabled."
+msgstr "المزود {0} معطَّل."
+
+msgid "Providers"
+msgstr "مقدمو الخدمة"
+
+msgid "Providers and Tariffs"
+msgstr "مقدمو الخدمة والتعرفات"
+
+msgid "Qadisiyyah"
+msgstr "القادسية"
+
+msgid "Quantity"
+msgstr "الكمية"
+
+msgid "Quantity exceeds the maximum per dispensing"
+msgstr "الكمية تتجاوز الحد الأقصى للصرف الواحد"
+
+msgid "Quarterly"
+msgstr "ربع سنوية"
+
+msgid "Query Parameter"
+msgstr "معامل في الرابط"
+
+msgid "Queued"
+msgstr "في الانتظار"
+
+msgid "Quick Tour"
+msgstr "جولة سريعة"
+
+msgid "Radiology"
+msgstr "أشعة"
+
+msgid "Radiology Center"
+msgstr "مركز أشعة"
+
+msgid "Random Seed"
+msgstr "بذرة التوليد"
+
+msgid "Rate"
+msgstr "السعر"
+
+msgid "Ready for Payment"
+msgstr "جاهزة للدفع"
+
+msgid "Reason"
+msgstr "السبب"
+
+msgid "Reason (Arabic)"
+msgstr "السبب (بالعربية)"
+
+msgid "Reason Code"
+msgstr "رمز السبب"
+
+msgid "Reason for Replacement"
+msgstr "سبب الاستبدال"
+
+msgid "Reason for Status Change"
+msgstr "سبب تغيير الحالة"
+
+msgid "Reasons"
+msgstr "الأسباب"
+
+msgid "Rebate (%)"
+msgstr "الحسم الحجمي (%)"
+
+msgid "Rebates"
+msgstr "الحسومات الحجمية"
+
+msgid "Receivable from Funding Parties Account"
+msgstr "حساب المستحق من الجهات الممولة"
+
+msgid "Received"
+msgstr "مُستلَم"
+
+msgid "Received On"
+msgstr "تاريخ الاستلام"
+
+msgid "Received in Account"
+msgstr "استُلم في الحساب"
+
+msgid "Recipient"
+msgstr "المستلم"
+
+msgid "Recipients"
+msgstr "المستلمون"
+
+msgid "Records Created"
+msgstr "السجلات المنشأة"
+
+msgid "Records by Document"
+msgstr "السجلات حسب المستند"
+
+msgid "Records in the system"
+msgstr "السجلات في النظام"
+
+msgid "Reduced"
+msgstr "مخفَّض"
+
+msgid "Reference"
+msgstr "المرجع"
+
+msgid "Reference Type"
+msgstr "نوع المرجع"
+
+msgid "Reimbursement"
+msgstr "استرداد نفقات"
+
+msgid "Reinstated"
+msgstr "أُعيد العمل بها"
+
+msgid "Reject"
+msgstr "رفض"
+
+msgid "Rejected"
+msgstr "مرفوض"
+
+msgid "Rejection"
+msgstr "رفض"
+
+msgid "Rejection Reason"
+msgstr "سبب الرفض"
+
+msgid "Related To"
+msgstr "مرتبط بـ"
+
+msgid "Related To (Type)"
+msgstr "مرتبط بـ (النوع)"
+
+msgid "Relationship"
+msgstr "صلة القرابة"
+
+msgid "Remaining"
+msgstr "المتبقي"
+
+msgid "Removal started"
+msgstr "بدأ الحذف"
+
+msgid "Remove"
+msgstr "حذف"
+
+msgid "Remove all demo data"
+msgstr "حذف كل بيانات العرض"
+
+msgid "Remove the demo data"
+msgstr "حذف بيانات العرض"
+
+msgid "Removed"
+msgstr "محذوف"
+
+msgid "Replaced"
+msgstr "مستبدلة"
+
+msgid "Replaced By"
+msgstr "استُبدلت بـ"
+
+msgid "Report"
+msgstr "التقرير"
+
+msgid "Reports"
+msgstr "التقارير"
+
+msgid "Request"
+msgstr "الطلب"
+
+msgid "Request Body"
+msgstr "محتوى الطلب"
+
+msgid "Request Date"
+msgstr "تاريخ الطلب"
+
+msgid "Request Information"
+msgstr "طلب معلومات"
+
+msgid "Request Pre-Authorization"
+msgstr "طلب موافقة مسبقة"
+
+msgid "Requested"
+msgstr "مطلوب"
+
+msgid "Requested Amount"
+msgstr "المبلغ المطلوب"
+
+msgid "Requested Price"
+msgstr "السعر المطلوب"
+
+msgid "Requests"
+msgstr "الطلبات"
+
+msgid "Required"
+msgstr "مطلوب"
+
+msgid "Required Approval Level"
+msgstr "مستوى الاعتماد المطلوب"
+
+msgid "Required Role"
+msgstr "الدور المطلوب"
+
+msgid "Requires Pre-Authorization"
+msgstr "يتطلب موافقة مسبقة"
+
+msgid "Requires a Diagnosis"
+msgstr "يتطلب تشخيصًا"
+
+msgid "Requires pre-authorization"
+msgstr "يتطلب موافقة مسبقة"
+
+msgid "Reserved"
+msgstr "المحجوز"
+
+msgid "Reserved by Open Authorizations"
+msgstr "محجوز بموافقات مفتوحة"
+
+msgid "Resolution"
+msgstr "الحل"
+
+msgid "Resolution (Hours)"
+msgstr "الحل (ساعات)"
+
+msgid "Resolution Due"
+msgstr "موعد الحل"
+
+msgid "Resolved"
+msgstr "تم الحل"
+
+msgid "Resolved On"
+msgstr "تاريخ الحل"
+
+msgid "Response"
+msgstr "الاستجابة"
+
+msgid "Response Due"
+msgstr "موعد الرد"
+
+msgid "Result"
+msgstr "النتيجة"
+
+msgid "Retain Until"
+msgstr "الاحتفاظ حتى"
+
+msgid "Retention (Years)"
+msgstr "مدة الاحتفاظ (سنوات)"
+
+msgid "Review"
+msgstr "المراجعة"
+
+msgid "Review Notes"
+msgstr "ملاحظات المراجعة"
+
+msgid "Reviewer Speciality"
+msgstr "تخصص المراجع"
+
+msgid "Risk"
+msgstr "الخطر"
+
+msgid "Risk Score"
+msgstr "درجة الخطر"
+
+msgid "Role"
+msgstr "الدور"
+
+msgid "Routine"
+msgstr "اعتيادي"
+
+msgid "Row {0}: class {1} does not exist."
+msgstr "الصف {0}: الفئة {1} غير موجودة."
+
+msgid "Row {0}: select a service or a drug."
+msgstr "الصف {0}: اختر خدمة أو دواءً."
+
+msgid "Row {0}: select the service or the drug."
+msgstr "الصف {0}: اختر الخدمة أو الدواء."
+
+msgid "Row {0}: the benefit {1} is already defined for this class."
+msgstr "الصف {0}: المنفعة {1} معرّفة مسبقاً لهذه الفئة."
+
+msgid "Row {0}: the item appears more than once."
+msgstr "الصف {0}: البند مكرر."
+
+msgid "Rows to Reject (e.g. 2,3)"
+msgstr "أرقام الصفوف المرفوضة (مثال 2,3)"
+
+msgid "Rule"
+msgstr "القاعدة"
+
+msgid "Rule Name"
+msgstr "اسم القاعدة"
+
+msgid "Rule Type"
+msgstr "نوع القاعدة"
+
+msgid "Rules"
+msgstr "القواعد"
+
+msgid "Run"
+msgstr "العملية"
+
+msgid "Run Fraud, Waste and Abuse Rules on Submission"
+msgstr "تشغيل قواعد الاحتيال والهدر وسوء الاستخدام عند التقديم"
+
+msgid "Running"
+msgstr "قيد التنفيذ"
+
+msgid "SMS"
+msgstr "رسالة نصية"
+
+msgid "Saladin"
+msgstr "صلاح الدين"
+
+msgid "Satisfaction (1-5)"
+msgstr "الرضا (1-5)"
+
+msgid "Save"
+msgstr "حفظ"
+
+msgid "Save Decision"
+msgstr "حفظ القرار"
+
+msgid "Saved"
+msgstr "تم الحفظ"
+
+msgid "Scheduled"
+msgstr "مجدول"
+
+msgid "Scheduled For"
+msgstr "مجدول في"
+
+msgid "Scope of Cover"
+msgstr "نطاق التغطية"
+
+msgid "Sea"
+msgstr "بحري"
+
+msgid "Search"
+msgstr "بحث"
+
+msgid "Searchable Text (OCR)"
+msgstr "نص قابل للبحث (OCR)"
+
+msgid "Secondary Diagnosis"
+msgstr "تشخيص ثانوي"
+
+msgid "Segments"
+msgstr "الأجزاء"
+
+msgid "Select a provider or a network."
+msgstr "اختر مقدم خدمة أو شبكة."
+
+msgid "Select the authorization to extend."
+msgstr "اختر الموافقة المراد تمديدها."
+
+msgid "Select the class of the member."
+msgstr "اختر فئة العضو."
+
+msgid "Select the health fund of the plan."
+msgstr "اختر الصندوق الصحي للخطة."
+
+msgid "Select the health fund."
+msgstr "اختر الصندوق الصحي."
+
+msgid "Select the principal member."
+msgstr "اختر العضو الرئيسي."
+
+msgid "Select the rejection reason."
+msgstr "اختر سبب الرفض."
+
+msgid "Self-Funded"
+msgstr "تمويل ذاتي"
+
+msgid "Self-Funded Scheme"
+msgstr "برنامج تمويل ذاتي"
+
+msgid "Self-funded clients are charged to their fund"
+msgstr "يُحمَّل العملاء ذوو التمويل الذاتي على صندوقهم"
+
+msgid "Send"
+msgstr "إرسال"
+
+msgid "Send Notifications"
+msgstr "إرسال الإشعارات"
+
+msgid "Sender ID / Number"
+msgstr "معرّف / رقم المرسل"
+
+msgid "Sent"
+msgstr "أُرسل"
+
+msgid "Sent On"
+msgstr "أُرسل في"
+
+msgid "Service"
+msgstr "الخدمة"
+
+msgid "Service Code"
+msgstr "رمز الخدمة"
+
+msgid "Service Date"
+msgstr "تاريخ الخدمة"
+
+msgid "Service Desk SLA"
+msgstr "مستوى الخدمة لمكتب الأعضاء"
+
+msgid "Service Level"
+msgstr "مستوى الخدمة"
+
+msgid "Service Level Rules"
+msgstr "قواعد مستوى الخدمة"
+
+msgid "Service Name"
+msgstr "اسم الخدمة"
+
+msgid "Service Name (Arabic)"
+msgstr "اسم الخدمة (بالعربية)"
+
+msgid "Service Ticket"
+msgstr "تذكرة خدمة"
+
+msgid "Service excluded by the plan"
+msgstr "الخدمة مستثناة بموجب الخطة"
+
+msgid "Services and Drugs"
+msgstr "الخدمات والأدوية"
+
+msgid "Sessions Authorized"
+msgstr "الجلسات المصرح بها"
+
+msgid "Sessions Limit"
+msgstr "حد الجلسات"
+
+msgid "Sessions Used"
+msgstr "الجلسات المستخدمة"
+
+msgid "Set the administration fee income account in TPA Settings."
+msgstr "حدد حساب إيراد أتعاب الإدارة في إعدادات إدارة المطالبات الصحية."
+
+msgid "Set the default bank or cash account for provider payments in TPA Settings."
+msgstr "حدد الحساب المصرفي أو النقدي الافتراضي لمدفوعات مقدمي الخدمة في إعدادات إدارة المطالبات الصحية."
+
+msgid "Set the liability account of fund {0}."
+msgstr "حدد حساب الالتزام للصندوق {0}."
+
+msgid "Set the liability account of the fund."
+msgstr "حدد حساب الالتزام للصندوق."
+
+msgid "Set the settlement adjustments account in TPA Settings."
+msgstr "حدد حساب تسويات المقدمين في إعدادات إدارة المطالبات الصحية."
+
+msgid "Settings"
+msgstr "الإعدادات"
+
+msgid "Settings Backup"
+msgstr "نسخة الإعدادات"
+
+msgid "Settlement"
+msgstr "التسوية"
+
+msgid "Settlement Adjustment"
+msgstr "تسوية في الكشف"
+
+msgid "Settlement Adjustments Account"
+msgstr "حساب تسويات الكشوف"
+
+msgid "Settlement Claim"
+msgstr "مطالبة في كشف تسوية"
+
+msgid "Settlement Document"
+msgstr "مستند تسوية"
+
+msgid "Settlements"
+msgstr "التسويات"
+
+msgid "Settlements are payable to this supplier"
+msgstr "تُدفع التسويات إلى هذا المورّد"
+
+msgid "Severity"
+msgstr "الخطورة"
+
+msgid "Share (%)"
+msgstr "الحصة (%)"
+
+msgid "Share of Cost (%)"
+msgstr "نسبة الكلفة (%)"
+
+msgid "Share of Rejected (%)"
+msgstr "النسبة من المرفوض (%)"
+
+msgid "Show this code to the provider to confirm your membership."
+msgstr "أظهر هذا الرمز لمقدم الخدمة للتأكد من عضويتك."
+
+msgid "Sign out"
+msgstr "تسجيل الخروج"
+
+msgid "Size"
+msgstr "الحجم"
+
+msgid "Skipped Records"
+msgstr "سجلات متجاوزة"
+
+msgid "Some items are rejected or above the limit. Use Partially Approved."
+msgstr "بعض البنود مرفوضة أو فوق الحد. استخدم حالة معتمد جزئياً."
+
+msgid "Some services need a pre-authorization before treatment. Ask the provider to request it."
+msgstr "تتطلب بعض الخدمات موافقة مسبقة قبل العلاج. اطلب من مقدم الخدمة تقديم الطلب."
+
+msgid "Son"
+msgstr "الابن"
+
+msgid "Source"
+msgstr "المصدر"
+
+msgid "Special Drug"
+msgstr "دواء خاص"
+
+msgid "Specialities"
+msgstr "التخصصات"
+
+msgid "Specialities (Empty = General)"
+msgstr "التخصصات (فارغ = عام)"
+
+msgid "Speciality"
+msgstr "التخصص"
+
+msgid "Spouse"
+msgstr "الزوج/الزوجة"
+
+msgid "Staff"
+msgstr "موظف"
+
+msgid "Staff accounts created by the console use the password Demo@2026. Change or disable them before any real use."
+msgstr "حسابات الموظفين التي أنشأتها المنصة كلمة مرورها Demo@2026. غيّرها أو عطّلها قبل أي استعمال حقيقي."
+
+msgid "Standard"
+msgstr "عادية"
+
+msgid "Start Review"
+msgstr "بدء المراجعة"
+
+msgid "Started"
+msgstr "بدأت"
+
+msgid "Started On"
+msgstr "بدأت في"
+
+msgid "State"
+msgstr "الحالة"
+
+msgid "Status"
+msgstr "الحالة"
+
+msgid "Status Code"
+msgstr "رمز الحالة"
+
+msgid "Status History"
+msgstr "سجل الحالة"
+
+msgid "Strength"
+msgstr "التركيز"
+
+msgid "Subject"
+msgstr "الموضوع"
+
+msgid "Submit a Claim"
+msgstr "تقديم مطالبة"
+
+msgid "Submit the claim first."
+msgstr "اعتمد المطالبة أولًا."
+
+msgid "Submitted"
+msgstr "مقدَّم"
+
+msgid "Success"
+msgstr "نجاح"
+
+msgid "Success Status Codes"
+msgstr "رموز النجاح"
+
+msgid "Suggestion"
+msgstr "اقتراح"
+
+msgid "Sulaymaniyah"
+msgstr "السليمانية"
+
+msgid "Supersedes"
+msgstr "يحل محل"
+
+msgid "Supplier"
+msgstr "مورِّد"
+
+msgid "Supplier (for Payments)"
+msgstr "المورّد (للدفعات)"
+
+msgid "Surgery"
+msgstr "عملية جراحية"
+
+msgid "Surgical"
+msgstr "جراحية"
+
+msgid "Surgical Procedure"
+msgstr "إجراء جراحي"
+
+msgid "Suspended"
+msgstr "موقوف"
+
+msgid "TPA Administration Fee Income Account"
+msgstr "حساب إيراد أتعاب إدارة TPA"
+
+msgid "TPA Approval Level"
+msgstr "مستوى اعتماد TPA"
+
+msgid "TPA Claims"
+msgstr "مطالبات TPA"
+
+msgid "TPA Claims Desk"
+msgstr "مكتب المطالبات الطبية"
+
+msgid "TPA Claims Register"
+msgstr "سجل المطالبات الطبية"
+
+msgid "TPA Client"
+msgstr "عميل TPA"
+
+msgid "TPA Dashboards"
+msgstr "لوحات المطالبات الصحية"
+
+msgid "TPA Demo Data"
+msgstr "بيانات عرض TPA"
+
+msgid "TPA Demo Record"
+msgstr "سجل بيانات العرض (TPA)"
+
+msgid "TPA Demo Run"
+msgstr "تشغيل بيانات العرض (TPA)"
+
+msgid "TPA Document"
+msgstr "مستند TPA"
+
+msgid "TPA Executive"
+msgstr "لوحة الإدارة التنفيذية للمطالبات الصحية"
+
+msgid "TPA Fee Invoice"
+msgstr "فاتورة أتعاب TPA"
+
+msgid "TPA Finance"
+msgstr "المالية"
+
+msgid "TPA Finance Desk"
+msgstr "المكتب المالي للمطالبات الصحية"
+
+msgid "TPA Management"
+msgstr "إدارة المطالبات الصحية"
+
+msgid "TPA Notification Log"
+msgstr "سجل إشعارات TPA"
+
+msgid "TPA Notification Provider"
+msgstr "مزود إشعارات TPA"
+
+msgid "TPA Notification Template"
+msgstr "قالب إشعار TPA"
+
+msgid "TPA Reference"
+msgstr "مرجع TPA"
+
+msgid "TPA Reference Type"
+msgstr "نوع مرجع TPA"
+
+msgid "TPA Reports"
+msgstr "تقارير المطالبات الصحية"
+
+msgid "TPA SLA Rule"
+msgstr "قاعدة مستوى الخدمة"
+
+msgid "TPA Service Desk"
+msgstr "مكتب خدمة الأعضاء"
+
+msgid "TPA Settings"
+msgstr "إعدادات TPA"
+
+msgid "TPA Status Transition"
+msgstr "انتقال حالة TPA"
+
+msgid "Tags"
+msgstr "الوسوم"
+
+msgid "Tariff Item"
+msgstr "بند التعرفة"
+
+msgid "Tariff Name"
+msgstr "اسم التعرفة"
+
+msgid "Tariff Price"
+msgstr "سعر التعرفة"
+
+msgid "Tariff Rebate"
+msgstr "حسم حجمي للتعرفة"
+
+msgid "Tariff {0} already starts on or after this date."
+msgstr "التعرفة {0} تبدأ في هذا التاريخ أو بعده."
+
+msgid "Template"
+msgstr "القالب"
+
+msgid "Templates are copied to create new plans"
+msgstr "تُنسخ القوالب لإنشاء برامج جديدة"
+
+msgid "Terminated"
+msgstr "منتهية"
+
+msgid "Terms"
+msgstr "الشروط"
+
+msgid "Terms and Conditions"
+msgstr "الشروط والأحكام"
+
+msgid "Text extraction needs pdftotext for PDF files or Tesseract for images on the server."
+msgstr "يحتاج استخراج النص إلى pdftotext لملفات PDF أو Tesseract للصور على الخادم."
+
+msgid "The amount must be positive."
+msgstr "يجب أن يكون المبلغ موجباً."
+
+msgid "The authorization is {0}."
+msgstr "حالة الموافقة: {0}."
+
+msgid "The benefit does not apply to this age"
+msgstr "المنفعة لا تسري على هذه الفئة العمرية"
+
+msgid "The benefit does not apply to this gender"
+msgstr "المنفعة لا تسري على هذا الجنس"
+
+msgid "The benefit {0} is not covered"
+msgstr "المنفعة {0} غير مغطاة"
+
+msgid "The claim cannot be accepted: {0}"
+msgstr "لا يمكن قبول المطالبة: {0}"
+
+msgid "The claim is {0}."
+msgstr "حالة المطالبة: {0}."
+
+msgid "The claim was received"
+msgstr "تم استلام المطالبة"
+
+msgid "The client contract is not active"
+msgstr "عقد العميل غير فعال"
+
+msgid "The code {0} was not found."
+msgstr "الرمز {0} غير موجود."
+
+msgid "The contractual discount is always applied first. The default order checks the benefit limit last"
+msgstr "يُطبَّق الخصم التعاقدي دائمًا أولًا. الترتيب الافتراضي يفحص حد المنفعة أخيرًا"
+
+msgid "The date is outside the coverage period of the member"
+msgstr "التاريخ خارج فترة تغطية العضو"
+
+msgid "The date is outside the plan period"
+msgstr "التاريخ خارج فترة الخطة"
+
+msgid "The date of service cannot be in the future."
+msgstr "لا يجوز أن يكون تاريخ الخدمة في المستقبل."
+
+msgid "The drug is not covered"
+msgstr "الدواء غير مغطى"
+
+msgid "The drug {0} was dispensed again within {1} days ({2})"
+msgstr "صُرف الدواء {0} مرة أخرى خلال {1} يوماً ({2})"
+
+msgid "The endpoint must be an http(s) URL."
+msgstr "يجب أن تكون الواجهة عنوان http(s)."
+
+msgid "The full volume of the specification: a busy year of business."
+msgstr "الحجم الكامل الوارد في المواصفات: سنة عمل مزدحمة."
+
+msgid "The fund is not active."
+msgstr "الصندوق غير فعال."
+
+msgid "The fund {0} has an available balance of {1} only."
+msgstr "الرصيد المتاح للصندوق {0} هو {1} فقط."
+
+msgid "The invoice {0} of this provider was already submitted ({1})"
+msgstr "الفاتورة {0} لهذا المقدم سبق تقديمها ({1})"
+
+msgid "The license of the provider has expired"
+msgstr "انتهت صلاحية ترخيص مقدم الخدمة"
+
+msgid "The license of the provider has expired."
+msgstr "انتهت صلاحية ترخيص مقدم الخدمة."
+
+msgid "The message template is invalid: {0}"
+msgstr "قالب الرسالة غير صالح: {0}"
+
+msgid "The net payable must be positive."
+msgstr "يجب أن يكون صافي المستحق موجباً."
+
+msgid "The period end cannot be before its start."
+msgstr "لا يجوز أن تسبق نهاية الفترة بدايتها."
+
+msgid "The person already has overlapping coverage under {0}."
+msgstr "لدى الشخص تغطية متداخلة بموجب {0}."
+
+msgid "The person is already registered in this plan ({0})."
+msgstr "الشخص مسجل مسبقاً في هذه الخطة ({0})."
+
+msgid "The plan is {0}"
+msgstr "حالة الخطة: {0}"
+
+msgid "The pre-authorization is not valid for this member, provider and date."
+msgstr "الموافقة المسبقة غير صالحة لهذا العضو ومقدم الخدمة والتاريخ."
+
+msgid "The principal member belongs to another plan."
+msgstr "العضو الرئيسي ينتمي إلى خطة أخرى."
+
+msgid "The provider accepted the message."
+msgstr "قبل المزود الرسالة."
+
+msgid "The provider is not contracted for this client"
+msgstr "مقدم الخدمة غير متعاقد مع هذا العميل"
+
+msgid "The provider is {0}"
+msgstr "حالة مقدم الخدمة: {0}"
+
+msgid "The provider scans the QR code to confirm that the membership is active today."
+msgstr "يمسح مقدم الخدمة رمز QR للتأكد من أن العضوية فعالة اليوم."
+
+msgid "The provider's claims in {0} days reached {1}"
+msgstr "بلغت مطالبات مقدم الخدمة خلال {0} يوماً {1}"
+
+msgid "The provider's claims rose by {0}% against the previous period"
+msgstr "ارتفعت مطالبات مقدم الخدمة بنسبة {0}% قياساً بالفترة السابقة"
+
+msgid "The request is {0}."
+msgstr "حالة الطلب: {0}."
+
+msgid "The request was received"
+msgstr "تم استلام الطلب"
+
+msgid "The same seed and size give the same data again"
+msgstr "البذرة نفسها مع الحجم نفسه تعيد البيانات ذاتها"
+
+msgid "The same service was claimed for this member within {0} days ({1})"
+msgstr "طُولبت الخدمة نفسها لهذا العضو خلال {0} يوماً ({1})"
+
+msgid "The sessions limit of {0} has been reached"
+msgstr "بلغ حد الجلسات وهو {0}"
+
+msgid "The settlement must be submitted and not yet paid."
+msgstr "يجب أن تكون التسوية مقدمة وغير مدفوعة بعد."
+
+msgid "The {0} limit has been exhausted"
+msgstr "استُنفد حد {0}"
+
+msgid "There is no demo data to remove."
+msgstr "لا توجد بيانات عرض لحذفها."
+
+msgid "This Journal Entry was created by {0} {1}. Cancel that document instead."
+msgstr "أُنشئ قيد اليومية هذا من {0} {1}، فألغِ ذلك المستند بدلًا منه."
+
+msgid "This card is personal and cannot be transferred. Report a lost card immediately."
+msgstr "البطاقة شخصية ولا يجوز التنازل عنها. أبلغ فوراً عند فقدانها."
+
+msgid "This notification was already sent."
+msgstr "أُرسل هذا الإشعار سابقًا."
+
+msgid "This page is not available for your account."
+msgstr "هذه الصفحة غير متاحة لحسابك."
+
+msgid "This plan is not a template."
+msgstr "هذه الخطة ليست نموذجية."
+
+msgid "This provider is outside your scope."
+msgstr "مقدم الخدمة هذا خارج نطاقك."
+
+msgid "This status is set by the provider settlement."
+msgstr "هذه الحالة تحددها تسوية مقدم الخدمة."
+
+msgid "Ticket Type"
+msgstr "نوع الطلب"
+
+msgid "Ticket {0} is overdue and was escalated"
+msgstr "التذكرة {0} متأخرة وتم تصعيدها"
+
+msgid "Tickets"
+msgstr "التذاكر"
+
+msgid "Tickets by Type"
+msgstr "التذاكر حسب النوع"
+
+msgid "Time"
+msgstr "الوقت"
+
+msgid "Title"
+msgstr "العنوان"
+
+msgid "To"
+msgstr "إلى"
+
+msgid "To (0 = no limit)"
+msgstr "إلى (0 = بلا حد)"
+
+msgid "To Date"
+msgstr "إلى تاريخ"
+
+msgid "To Status"
+msgstr "إلى حالة"
+
+msgid "Token / Key"
+msgstr "الرمز / المفتاح"
+
+msgid "Token / Key / Password"
+msgstr "الرمز / المفتاح / كلمة المرور"
+
+msgid "Top Claimants"
+msgstr "أعلى الأعضاء مطالبة"
+
+msgid "Total"
+msgstr "الإجمالي"
+
+msgid "Total Borne by the Member"
+msgstr "إجمالي ما يتحمله المؤمَّن عليه"
+
+msgid "Total Outstanding"
+msgstr "إجمالي المستحق"
+
+msgid "Totals"
+msgstr "الإجماليات"
+
+msgid "Tourism"
+msgstr "سياحة"
+
+msgid "Trade Name"
+msgstr "الاسم التجاري"
+
+msgid "Treatment"
+msgstr "علاج"
+
+msgid "Treatment outside the network is not covered"
+msgstr "العلاج خارج الشبكة غير مغطى"
+
+msgid "Type"
+msgstr "النوع"
+
+msgid "Type DELETE to confirm"
+msgstr "اكتب DELETE للتأكيد"
+
+msgid "Under Investigation"
+msgstr "قيد التحقيق"
+
+msgid "Under Review"
+msgstr "قيد المراجعة"
+
+msgid "Unknown size."
+msgstr "حجم غير معروف."
+
+msgid "Until"
+msgstr "حتى"
+
+msgid "Up to Amount (0 = unlimited)"
+msgstr "حتى مبلغ (0 = غير محدود)"
+
+msgid "Update"
+msgstr "تحديث"
+
+msgid "Urgent"
+msgstr "عاجل"
+
+msgid "Used"
+msgstr "المستخدم"
+
+msgid "Used to route the review to the right medical reviewer"
+msgstr "يُستخدم لتوجيه المراجعة إلى المراجع الطبي المناسب"
+
+msgid "User"
+msgstr "المستخدم"
+
+msgid "Users who may sign in to the client portal and see the claims, members and funds of this client"
+msgstr "المستخدمون المخولون بالدخول إلى بوابة العميل والاطلاع على مطالباته وأعضائه وصناديقه"
+
+msgid "Utilization of the Annual Limits (%)"
+msgstr "استخدام الحدود السنوية (%)"
+
+msgid "Valid From"
+msgstr "ساري من"
+
+msgid "Valid To"
+msgstr "ساري إلى"
+
+msgid "Valid To cannot be before Valid From."
+msgstr "لا يجوز أن يسبق تاريخ نهاية الصلاحية تاريخ بدايتها."
+
+msgid "Valid Until"
+msgstr "صالحة حتى"
+
+msgid "Validation Results"
+msgstr "نتائج التحقق"
+
+msgid "Validity & Discount"
+msgstr "الصلاحية والخصم"
+
+msgid "Value"
+msgstr "القيمة"
+
+msgid "Variables: doc, customer_name, company. Example: {{ doc.name }} - {{ customer_name }}"
+msgstr "المتغيرات: doc, customer_name, company. مثال: {{ doc.name }} - {{ customer_name }}"
+
+msgid "Variables: recipient, message, sender. Example: {\"to\": {{ recipient | tojson }}, \"text\": {{ message | tojson }}, \"from\": {{ sender | tojson }}}"
+msgstr "المتغيرات: recipient, message, sender. مثال: {\"to\": {{ recipient | tojson }}, \"text\": {{ message | tojson }}, \"from\": {{ sender | tojson }}}"
+
+msgid "Version"
+msgstr "الإصدار"
+
+msgid "Version & Retention"
+msgstr "الإصدار والاحتفاظ"
+
+msgid "View"
+msgstr "عرض"
+
+msgid "Violations"
+msgstr "المخالفات"
+
+msgid "Volume Rebates"
+msgstr "الحسومات الحجمية"
+
+msgid "Waiting Period (Days)"
+msgstr "فترة الانتظار (أيام)"
+
+msgid "Waiting period of {0} days has not ended"
+msgstr "لم تنتهِ فترة الانتظار البالغة {0} يوماً"
+
+msgid "Walk-in"
+msgstr "حضور شخصي"
+
+msgid "Wasit"
+msgstr "واسط"
+
+msgid "Watchlist: {0}"
+msgstr "قائمة المراقبة: {0}"
+
+msgid "Welcome"
+msgstr "مرحبًا"
+
+msgid "WhatsApp"
+msgstr "واتساب"
+
+msgid "When"
+msgstr "متى"
+
+msgid "Window (Days)"
+msgstr "النافذة (أيام)"
+
+msgid "Within Service Level (%)"
+msgstr "ضمن مستوى الخدمة (%)"
+
+msgid "Workflow"
+msgstr "سير العمل"
+
+msgid "Workflow & Approvals"
+msgstr "سير العمل والاعتمادات"
+
+msgid "Year"
+msgstr "السنة"
+
+msgid "Yes"
+msgstr "نعم"
+
+msgid "Your account is not linked to a provider, a client or a member."
+msgstr "حسابك غير مرتبط بمقدم خدمة أو عميل أو عضو."
+
+msgid "Your request was received. Reference"
+msgstr "تم استلام طلبكم. الرقم المرجعي"
+
+msgid "amount"
+msgstr "amount"
+
+msgid "approve"
+msgstr "اعتماد"
+
+msgid "ar"
+msgstr "العربية"
+
+msgid "en"
+msgstr "English"
+
+msgid "status"
+msgstr "status"
+
+msgid "submit"
+msgstr "اعتماد"
+
+msgid "{0} billed items are not covered by the plan"
+msgstr "{0} من البنود المفوترة غير مغطاة بموجب الخطة"
+
+msgid "{0} cards issued"
+msgstr "تم إصدار {0} بطاقة"
+
+msgid "{0} claims for this member within {1} days"
+msgstr "{0} مطالبات لهذا العضو خلال {1} يوماً"
+
+msgid "{0} {1}"
+msgstr "{0} {1}"
+
+msgid "Fill the system with realistic, fictional data: Iraqi names, employers, hospitals, pharmacies, plans, members and medical claims spread over the past months. Every record goes through the real business rules, so the accounts, reports and dashboards are consistent. Everything created here can be removed in one step."
+msgstr "املأ النظام ببيانات واقعية متخيلة: أسماء عراقية وجهات عمل ومستشفيات وصيدليات وبرامج وأعضاء ومطالبات طبية موزعة على الأشهر الماضية. كل سجل يمر بقواعد العمل الحقيقية، فتبقى الحسابات والتقارير واللوحات متسقة. وكل ما يُنشأ هنا يُحذف بخطوة واحدة."

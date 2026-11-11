@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from_status",
+  "to_status",
+  "allowed_role"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "From Status",
+   "options": "Draft\nSubmitted\nReceived\nUnder Review\nMedical Review\nFinancial Review\nPending Information\nApproved\nPartially Approved\nRejected\nReady for Payment\nPaid\nClosed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "To Status",
+   "options": "Draft\nSubmitted\nReceived\nUnder Review\nMedical Review\nFinancial Review\nPending Information\nApproved\nPartially Approved\nRejected\nReady for Payment\nPaid\nClosed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "allowed_role",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Allowed Role",
+   "options": "Role"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-11-09 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "TPA Status Transition",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

@@ -1,0 +1,415 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "PA-.YYYY.-.######",
+ "creation": "2026-11-09 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member",
+  "member_name",
+  "card_no",
+  "plan",
+  "tpa_client",
+  "cb_1",
+  "provider",
+  "auth_type",
+  "status",
+  "priority",
+  "sb_req",
+  "request_date",
+  "diagnosis",
+  "specialty",
+  "parent_auth",
+  "cb_req",
+  "admission_date",
+  "expected_days",
+  "sessions_authorized",
+  "sessions_used",
+  "medical_notes",
+  "sb_items",
+  "items",
+  "sb_amounts",
+  "currency",
+  "requested_amount",
+  "approved_amount",
+  "cb_amt",
+  "member_share",
+  "payer_share",
+  "valid_until",
+  "sb_review",
+  "assigned_reviewer",
+  "required_level",
+  "decision_by",
+  "decision_on",
+  "cb_rev",
+  "rejection_reason",
+  "decision_notes",
+  "info_request",
+  "eligibility_log"
+ ],
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Member",
+   "options": "Plan Member",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "member.member_name",
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Member Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "member.card_no",
+   "fieldname": "card_no",
+   "fieldtype": "Data",
+   "label": "Card No.",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "member.plan",
+   "fieldname": "plan",
+   "fieldtype": "Link",
+   "label": "Plan",
+   "options": "Health Plan",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "member.tpa_client",
+   "fieldname": "tpa_client",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Client",
+   "options": "TPA Client",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "provider",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Provider",
+   "options": "Medical Provider",
+   "reqd": 1
+  },
+  {
+   "default": "Standard",
+   "fieldname": "auth_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Authorization Type",
+   "options": "Standard\nSurgery\nAdmission\nAdvanced Diagnostics\nSpecial Drug\nContinuous Treatment\nEmergency\nAdmission Extension\nOut-of-Network",
+   "reqd": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Draft\nSubmitted\nUnder Review\nMedical Review\nPending Information\nApproved\nPartially Approved\nRejected\nCancelled\nExpired",
+   "read_only": 1
+  },
+  {
+   "default": "Routine",
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "Routine\nUrgent\nEmergency"
+  },
+  {
+   "fieldname": "sb_req",
+   "fieldtype": "Section Break",
+   "label": "Request"
+  },
+  {
+   "default": "Today",
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "diagnosis",
+   "fieldtype": "Link",
+   "label": "Diagnosis",
+   "options": "Medical Code"
+  },
+  {
+   "fieldname": "specialty",
+   "fieldtype": "Data",
+   "label": "Speciality"
+  },
+  {
+   "depends_on": "eval:doc.auth_type=='Admission Extension'",
+   "fieldname": "parent_auth",
+   "fieldtype": "Link",
+   "label": "Extends Authorization",
+   "options": "Pre-Authorization"
+  },
+  {
+   "fieldname": "cb_req",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:in_list(['Admission','Admission Extension','Surgery'], doc.auth_type)",
+   "fieldname": "admission_date",
+   "fieldtype": "Date",
+   "label": "Admission Date"
+  },
+  {
+   "depends_on": "eval:in_list(['Admission','Admission Extension'], doc.auth_type)",
+   "fieldname": "expected_days",
+   "fieldtype": "Int",
+   "label": "Expected Days"
+  },
+  {
+   "depends_on": "eval:doc.auth_type=='Continuous Treatment'",
+   "fieldname": "sessions_authorized",
+   "fieldtype": "Int",
+   "label": "Sessions Authorized"
+  },
+  {
+   "depends_on": "eval:doc.auth_type=='Continuous Treatment'",
+   "fieldname": "sessions_used",
+   "fieldtype": "Int",
+   "label": "Sessions Used",
+   "read_only": 1
+  },
+  {
+   "fieldname": "medical_notes",
+   "fieldtype": "Text Editor",
+   "label": "Medical Notes and Report"
+  },
+  {
+   "fieldname": "sb_items",
+   "fieldtype": "Section Break",
+   "label": "Services and Drugs"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Pre-Auth Item"
+  },
+  {
+   "fieldname": "sb_amounts",
+   "fieldtype": "Section Break",
+   "label": "Amounts"
+  },
+  {
+   "fetch_from": "plan.currency",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested_amount",
+   "fieldtype": "Currency",
+   "label": "Requested Amount",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "approved_amount",
+   "fieldtype": "Currency",
+   "label": "Approved Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_amt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "member_share",
+   "fieldtype": "Currency",
+   "label": "Member Share",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payer_share",
+   "fieldtype": "Currency",
+   "label": "Payer Share",
+   "read_only": 1
+  },
+  {
+   "fieldname": "valid_until",
+   "fieldtype": "Date",
+   "label": "Valid Until",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_review",
+   "fieldtype": "Section Break",
+   "label": "Review"
+  },
+  {
+   "fieldname": "assigned_reviewer",
+   "fieldtype": "Link",
+   "label": "Medical Reviewer",
+   "options": "User"
+  },
+  {
+   "fieldname": "required_level",
+   "fieldtype": "Int",
+   "label": "Required Approval Level",
+   "read_only": 1
+  },
+  {
+   "fieldname": "decision_by",
+   "fieldtype": "Link",
+   "label": "Decided By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "decision_on",
+   "fieldtype": "Datetime",
+   "label": "Decided On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_rev",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rejection_reason",
+   "fieldtype": "Link",
+   "label": "Rejection Reason",
+   "options": "Claim Rejection Reason",
+   "read_only": 1
+  },
+  {
+   "fieldname": "decision_notes",
+   "fieldtype": "Small Text",
+   "label": "Decision Notes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "info_request",
+   "fieldtype": "Small Text",
+   "label": "Information Requested",
+   "read_only": 1
+  },
+  {
+   "fieldname": "eligibility_log",
+   "fieldtype": "Small Text",
+   "label": "Eligibility Checks",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-09 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "Pre-Authorization",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Claims Officer",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Medical Reviewer",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Insurance Auditor"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Customer Service"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TPA Finance"
+  }
+ ],
+ "search_fields": "member_name,card_no,provider,status",
+ "show_title_field_in_link": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "member_name",
+ "track_changes": 1
+}

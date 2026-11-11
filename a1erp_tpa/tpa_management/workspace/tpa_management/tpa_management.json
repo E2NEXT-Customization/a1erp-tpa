@@ -1,0 +1,47 @@
+{
+ "charts": [],
+ "content": "[{\"id\": \"hdr1\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>TPA Management</b></span>\", \"col\": 12}}, {\"id\": \"blk0\", \"type\": \"custom_block\", \"data\": {\"custom_block_name\": \"WS-tpa-management-main\", \"col\": 12}}, {\"id\": \"blk1\", \"type\": \"custom_block\", \"data\": {\"custom_block_name\": \"WS-tpa-management-sections\", \"col\": 12}}]",
+ "creation": "2026-11-09 10:00:00.000000",
+ "custom_blocks": [
+  {
+   "custom_block_name": "WS-tpa-management-main",
+   "label": "WS-tpa-management-main"
+  },
+  {
+   "custom_block_name": "WS-tpa-management-sections",
+   "label": "WS-tpa-management-sections"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "users",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "TPA Management",
+ "links": [],
+ "modified": "2026-11-10 14:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TPA Management",
+ "name": "TPA Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "TPA Manager"
+  },
+  {
+   "role": "Insurance Auditor"
+  }
+ ],
+ "sequence_id": 36.0,
+ "shortcuts": [],
+ "title": "TPA Management"
+}
